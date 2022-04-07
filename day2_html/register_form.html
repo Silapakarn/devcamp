@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Register Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,200&display=swap');
+    </style>
+</head>
+
+
+<body>
+    <link rel="stylesheet" href="./register_form_style.css">
+
+    <form action="">
+        <fieldset class="container">
+            <legend class="Register_Form">Register Form</legend>
+            <div class="input_box">
+                <label for="First_name"><br/>First name:</label>
+                <input type="text" placeholder="First name" name="First_name" id="First_name" >
+
+                <label for="Last_name"><br/>Last name:</label>
+                <input type="text" placeholder="Last name" name="Last_name" id="Last_name">
+
+                <label for="Password"><br/>Password:</label>
+                <input type="password" placeholder="Password" name="Password" id="Password">
+
+                <label for="Confirm_Password"><br/>Confirm Password:</label>
+                <input type="text" placeholder="Confirm Password" name="Confirm_Password" id="Confirm_Password">
+                
+                <label for="Email"><br/>Email:</label>
+                <input type="email" placeholder="Enter Email" name="Email" id="Email">
+
+                <label for="Confirm_Email"><br/>Confirm Email:</label>
+                <input type="text" placeholder="Enter Confirm Email" name="Confirm_Email" id="Confirm_Email">
+
+                <label for="birthday"><br/>Birthday:</label>
+                <input type="date" id="birthday" name="birthday"><br><br>
+                
+                <label for="Gender">Gender:</label>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male" checked>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female">
+                
+                <hr>
+            </div>
+
+            <div class="all_button">
+                <p>Creating an you account <a href="#">Terms & Privacy</a>.</p>
+                <button type="submit" class="Register">Register</button>
+                <button type="submit" class="Reset">Reset</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
