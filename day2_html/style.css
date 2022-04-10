@@ -1,6 +1,65 @@
-.title_bar{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 
+/**************** About Me *******************/
+
+* {
+  box-sizing: border-box;
+}
+
+/*Content_Porfie*/
+.Content_Porfie{
+  text-align: center;
+}
+
+/*************** All topnav *****************/
+.topnav{
+  background-color: rgb(240, 240, 240);
+  padding: 15px 20px;
+}
+
+ /* Style the links inside topnav */
+ .topnav a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 15px 20px;
+}
+
+/*topnav click*/
+.topnav a:hover {
+  background-color: #ada8f1;
+  color: rgb(255, 255, 255);
+}
+
+/*topnav active*/
+.active{
+  background-color: #ada8f1;
+  color: rgb(255, 255, 255);
+}
+
+/*Text_content*/
+.Text_content{
+  font-size: 15px;
+  margin: auto;
+  width: 40%;
+  text-align: left;
+}
+
+/**************** Skill ********************/
+
+
+/*skill_list*/
+.skill_list{
+  width: 20%;
+  margin: auto;
+  text-align: left;
+}
+
+
+/**************** Contact Me ***************/
+
+/*list_contact_me*/
+.list_contact_me{
+  width: 25%;
+  margin: auto;
+  text-align: left;
 }

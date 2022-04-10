@@ -1,0 +1,188 @@
+
+
+
+/********************** All topnav **********************/
+
+/*All topnav*/
+.topnav{
+    background-color: rgb(240, 240, 240);
+    padding: 15px 20px;
+    text-align: center;
+}
+  
+/* Style the links inside topnav */
+.topnav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 15px 20px;
+}
+  
+/*topnav click*/
+.topnav a:hover {
+    background-color: #ada8f1;
+    color: rgb(255, 255, 255);
+}
+  
+/*topnav active*/
+.active{
+    background-color: #ada8f1;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+/********************** All-fieldset **********************/
+
+/*div in All-fieldset*/
+.All-fieldset{
+    padding-top: 25px;
+}
+
+/*Text_outline*/
+.outline{
+    border-radius: 6px;
+    padding-top: 10px;
+    border: 2px solid #f1f1f1;
+}
+
+/*Text_in_outline*/
+.Text_in_outline{
+  text-align: center;
+  padding-bottom: -20px;
+}
+
+/*Small_picture*/
+.Small_picture{
+    float: left;
+    height: 50px;
+    width: 50px;
+    border-radius: 6px
+}
+
+/*text_My_Application*/
+.text_My_Application{
+    float: left;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+
+/*Search_Product*/
+.Search_Product{
+    border-radius: 6px;
+    padding: 8px 8px;
+    margin: auto;
+    width: 40%;
+    margin-top: 8px;
+    margin-right: 5px;
+    border: 2px solid #d8d8d8;
+}
+
+/*Search_button*/
+.Search_button{
+    text-align: center;
+    background-color: #9b95f8;
+    color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    border-radius: 6px;
+}
+
+/*hover:Search_button*/
+.Search_button:hover{
+    background-color: #5303d3;
+    color: white;
+}
+
+
+/*text_New_Product*/
+.text_New_Product{
+    float: right;
+    margin-top: 15px;
+    margin-right: 125px;
+}
+
+/*hover: text_New_Product*/
+.text_New_Product:hover{
+    color: #ff1717
+}
+
+
+
+/******************** Content in portfolio ************************/
+
+/*Portfolio_division_1*/
+.Portfolio_division_1{
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+/********** Row 1 **********/
+
+/*img-HTML*/
+.img-HTML{
+    width: 250px;
+    height: 250px;
+    display: inline;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+/*img-CSS*/
+.img-CSS{
+    width: 180px;
+    height: 250px;
+    margin: 50px 50px;
+    display: inline;
+    margin-left: 90px;
+}
+
+
+/********** Row 2 **********/
+
+/*img-Javascript*/
+.img-Javascript{
+    width: 260px;
+    height: 280px;
+    margin-left: 45px;
+    display: inline;
+}
+
+/*img-Nodejs*/
+.img-Nodejs{
+    width: 280px;
+    height: 300px;
+    margin-left: 45px;
+    display: inline;
+}
+
+
+/********** Row 3 **********/
+
+/*img-Python*/
+.img-Python{
+    width: 220px;
+    height: 220px;
+    margin-top: 40px;
+    margin-left: 70px;
+    margin-right: 20px;
+    display: inline;
+}
+
+/*img-Java*/
+.img-Java{
+    width: 280px;
+    height: 300px;
+    margin-left: 30px;
+    margin-right: 20px;
+    display: inline;
+}
+
+
+
