@@ -9,8 +9,6 @@ function draw(n){
 
 draw(4);
 
-
-Kan
   
 
 
