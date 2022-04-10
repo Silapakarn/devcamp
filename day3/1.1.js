@@ -9,9 +9,6 @@ function draw(n){
 
 draw(4);
 
-
-
-Silapakan Saniskosai
   
 
 
