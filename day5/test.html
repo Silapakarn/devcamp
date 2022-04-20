@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+
+</head>
+
+<body>
+
+
+    <h1>Hello ReqRes users!</h1>
+
+    <div id="resultDisplay"></div>
+
+    <script>
+        let aUser = [];
+
+        function getUser(userId, callback) {
+            axios.get("https://reqres.in/api/users/" + userId).then(function(response) {
+                let res_api = response.data.data
+                console.log(res_api)
+                callback(res_api)
+            })
+        }
+
+        /*Loop Data*/
+        function Show_data(res_api) {
+            for (let i = 0; i < res_api.length; i++) {
+                document.getElementById('resultDisplay').innerHTML += `<td><h2>${res_api[i].first_name}</h2><h2>${res_api[i].email}</h2><img src="${res_api[i].avatar}></td>"`
+            }
+        }
+        getUser(1, Show_data)
+    </script>
+</body>
+
+</html>

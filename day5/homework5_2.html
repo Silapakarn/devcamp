@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!--Axios-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+    <!--CSS-->
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="resultDisplay"></div>
+
+    <!--API-->
+    <script>
+        let textHtml = `<table><tr><td>Category</td>`
+        const covidData = {
+            "Thailand": {},
+            "World": {}
+        };
+
+        function Thailand(callback) {
+            axios.get("https://corona.lmao.ninja/v2/thailand").then(function(response) {
+
+                covidData.Thailand.cases = response.data.cases;
+                covidData.Thailand.todayCases = response.data.todayCases;
+                covidData.Thailand.deaths = response.data.deaths;
+                covidData.Thailand.todayDeaths = response.data.todayDeaths;
+                covidData.Thailand.recovered = response.data.recovered;
+                covidData.Thailand.todayRecovered = response.data.todayRecovered;
+                covidData.Thailand.active = response.data.active;
+                covidData.Thailand.critical = response.data.critical;
+                callback();
+            });
+        }
+
+
+        function World(callback) {
+            axios.get("https://corona.lmao.ninja/v2/all").then(function(response) {
+
+                covidData.World.cases = response.data.cases;
+                covidData.World.todayCases = response.data.todayCases;
+                covidData.World.deaths = response.data.deaths;
+                covidData.World.todayDeaths = response.data.todayDeaths;
+                covidData.World.recovered = response.data.recovered;
+                covidData.World.todayRecovered = response.data.todayRecovered;
+                covidData.World.active = response.data.active;
+                covidData.World.critical = response.data.critical;
+                callback()
+            });
+        }
+
+
+        Thailand(function() {
+            for (let i = covidData.Thailand) {
+                textHtml += `<td>`;
+                textHtml += i;
+                textHtml += `</td>`;
+            }
+
+            textHtml += `</tr><tr><td>World</td>`;
+
+            World(function() {
+                    console.log(covidData);
+                    for (let j in covidData.World[j]);
+                    textHtml += `<td>`;
+                    textHtml += covidData.World[j];
+                    textHtml += `</td>`;
+                }
+                textHtml += `</tr><tr><td>Thailand</td>`;
+                for (let g in covidData.thailand) {
+                    console.log(covidData.Thailand[g]);
+                }
+
+
+            });
+        });
+
+
+
+        console.log(covidData);
+    </script>
+
+
+</body>
+
+</html>

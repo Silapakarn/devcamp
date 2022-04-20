@@ -1,0 +1,86 @@
+/*text_title_Register_Form*/
+
+.text_title_Register_Form {
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 17px;
+}
+
+
+/*input*/
+
+.input_Register_Form {
+    margin-right: 10px;
+}
+
+
+/*container*/
+
+.container_fieldset {
+    box-sizing: border-box;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin: auto;
+}
+
+
+/* Overwrite default styles of hr */
+
+hr {
+    border: 1px solid #b4b4b4;
+    margin-bottom: 20px;
+    margin: 15px 25px;
+}
+
+
+/*All_button*/
+
+.all_button {
+    text-align: center;
+}
+
+
+/*hover*/
+
+.Register_button:hover {
+    background-color: #00612c;
+    color: rgb(255, 255, 255);
+}
+
+.Reset_button:hover {
+    background-color: #00612c;
+    color: rgb(255, 255, 255);
+}
+
+
+/*Register_button*/
+
+.Register_button {
+    text-align: center;
+    background-color: #00a048;
+    color: white;
+    padding: 10px 10px;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    border-radius: 6px;
+}
+
+
+/*Reset_Button*/
+
+.Reset_button {
+    text-align: center;
+    background-color: #00a048;
+    color: white;
+    padding: 10px 10px;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    border-radius: 6px;
+}
