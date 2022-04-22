@@ -49,8 +49,9 @@
                 }, 2000); //Ena function getUser
 
             })
-
         }
+
+
         // Display to tag table in HTML
         function display(res, gender, age) {
             for (let i = 0; i < res.length; i++) {
@@ -63,7 +64,8 @@
                     <img src="${res[i].avatar}"style="margin-left: 20px;margin-right: 20px;">
                     </td>`
             }
-            console.log(res) //End function display
+            console.log(res)
+                //End function display
         }
         getUser(display)
     </script>
