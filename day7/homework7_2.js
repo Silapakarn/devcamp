@@ -17,13 +17,12 @@ axios.get(`https://corona.lmao.ninja/v2/countries/`).then(function(response) {
     console.log(Sum_todayRecovered_all_country);
 
 
-    //Filter todayDeaths_Api
-    const Result_todayDeaths_and_population_Filter =
+    //Filter Result_Country_Filter
+    const Result_Country_Filter =
         //API
-
         allCovidData
         .filter(obj => obj.todayDeaths < 10 && obj.population > 100000000)
         .map(obj => obj.country);
 
-    console.log(Result_todayDeaths_and_population_Filter);
+    console.log(Result_Country_Filter);
 });

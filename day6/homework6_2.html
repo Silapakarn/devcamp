@@ -61,7 +61,7 @@
         let result = "";
 
         //Get API Data prople 
-        function myFunction_data_from_Api(k) {
+        function MyModalFunction_data_Api(k) {
             axios.get(`https://swapi.dev/api/people/${k}`).then(function(response) {
                 debugger;
 
@@ -115,7 +115,7 @@
                 result += `<td>${Data_Api_result[i].gender}</td>`;
 
                 //Col 4 button view
-                result += `<td><button id="btn-${i}" onclick="myFunction_data_from_Api(${parseInt(i)+1})" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">view</button></td>`;
+                result += `<td><button id="btn-${i}" onclick="MyModalFunction_data_Api(${parseInt(i)+1})" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">view</button></td>`;
 
                 result += `</tr><tr>`;
             }
