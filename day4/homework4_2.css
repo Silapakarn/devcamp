@@ -1,0 +1,36 @@
+.container {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+
+/*transform tag a */
+
+.mobileOnly {
+    font-size: bold;
+    opacity: 0;
+}
+
+@media (min-width: 500px) {
+    .mobileOnly {
+        opacity: 1;
+    }
+}
+
+
+/*transform tag p*/
+
+.MobileContent {
+    color: red;
+    width: 100%;
+    margin: auto;
+    font-size: bold;
+    text-align: right;
+    opacity: 0;
+}
+
+@media (max-width: 768px) {
+    .MobileContent {
+        opacity: 1;
+    }
+}

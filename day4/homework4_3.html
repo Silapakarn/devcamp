@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./homework4_3.css">
+    <link rel="stylesheet" href="./register_form.css">
+    <link rel="stylesheet" href="./portfolio_style.css">
+
+</head>
+
+
+
+<body class="bg-secondary">
+    <!--Container-->
+    <div class="container">
+
+        <!--Logo-->
+        <div class="col-auto justify-content-lg-start bg-dark p-3">
+            <div>
+                <img src="https://www.digitalskill.org/images/logo-thai-programmer-white.png">
+            </div>
+        </div>
+
+        <!--Menu-->
+        <div class="col">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-success justify-content-between">
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Workshop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#list_Member">Member</a>
+                    </li>
+
+                    <!-- Register Modal -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Register</a>
+                    </li>
+                </ul>
+
+
+                <!--list_Member Modal -->
+                <div class="modal fade" id="list_Member">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!--table-->
+                            <table class="table">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First Name</th>
+                                        <th scope="col">Last Name</th>
+                                        <th scope="col">Nick Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>อภิชาติ</td>
+                                        <td>แซ่หลู่</td>
+                                        <td>เอ๋</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>ปกรณ์พัฒน์</td>
+                                        <td>อมรเลิศพานิช</td>
+                                        <td>มิ้น</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>ปฏิพัทธ์</td>
+                                        <td>ปัดป้อง</td>
+                                        <td>พัตเตอร์</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>อินอาม</td>
+                                        <td>สัณสุตนานนท์</td>
+                                        <td>อาร์ม</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>ณัฐฐวดี</td>
+                                        <td>จันทร์ศิรินุเคราะห์</td>
+                                        <td>โบว์</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!--End list_Member Modal -->
+
+
+                <!--Register Modal -->
+                <div class="modal fade" id="exampleModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+
+                            <!--App--Register_Form-->
+                            <div class="form">
+
+                                <fieldset class="container_fieldset">
+                                    <!--Title_Register_Form-->
+                                    <legend class="text_title_Register_Form">Register Form</legend>
+                                    <center>
+                                        <table>
+                                            <form action="">
+                                                <!--input_First_name-->
+                                                <tr>
+                                                    <td><label>First name : </label></td>
+                                                    <td><input class="input_Register_Form" type="text" placeholder="First name" name="First_name" id="First_name"></td>
+                                                </tr>
+
+
+                                                <!--input_Last_name-->
+                                                <tr>
+                                                    <td><label>Last name : </label></td>
+                                                    <td><input class="input_Register_Form" type="text" placeholder="Last name" name="Last_name" id="Last_name"></td>
+                                                </tr>
+
+                                                <!--input_Password-->
+                                                <tr>
+                                                    <td><label>Password : </label></td>
+                                                    <td><input class="input_Register_Form" type="password" placeholder="Password" name="Password" id="Password"></td>
+                                                </tr>
+
+                                                <!--input_Password-->
+                                                <tr>
+                                                    <td><label>Confirm Password : </label></td>
+                                                    <td><input class="input_Register_Form" type="text" placeholder="Confirm Password" name="Confirm_Password" id="Confirm_Password"></td>
+                                                </tr>
+
+                                                <!--input_Enter_Email-->
+                                                <tr>
+                                                    <td><label>Email : </label></td>
+                                                    <td> <input class="input_Register_Form" type="email" placeholder="Enter Email" name="Email" id="Email"></td>
+                                                </tr>
+
+                                                <!--input_Confirm_Email-->
+                                                <tr>
+                                                    <td><label>Confirm Email : </label></td>
+                                                    <td><input class="input_Register_Form" type="text" placeholder="Enter Confirm Email" name="Confirm_Email" id="Confirm_Email"></td>
+                                                </tr>
+
+                                                <!--Birthday_From-->
+                                                <tr>
+                                                    <td>Birthday :</td>
+                                                    <!--Optional Date-->
+                                                    <td>
+                                                        <select name="day">
+                                                        <option value="01">1</option>
+                                                        <option value="02">2</option>
+                                                        <option value="03">3</option>
+                                                        <option value="04">4</option>
+                                                        <option value="05">5</option>
+                                                        <option value="06">6</option>
+                                                        <option value="07">7</option>
+                                                        <option value="08">8</option>
+                                                        <option value="09">9</option>
+                                                        <option value="10">10</option>
+                                                        <option value="11">11</option>
+                                                        <option value="12">12</option>
+                                                        <option value="13">13</option>
+                                                        <option value="14">14</option>
+                                                        <option value="15">15</option>
+                                                        <option value="16">16</option>
+                                                        <option value="17">17</option>
+                                                        <option value="18">18</option>
+                                                        <option value="19">19</option>
+                                                        <option value="20">20</option>
+                                                        <option value="21">21</option>
+                                                        <option value="22">22</option>
+                                                        <option value="23">23</option>
+                                                        <option value="24">24</option>
+                                                        <option value="25">25</option>
+                                                        <option value="26">26</option>
+                                                        <option value="27">27</option>
+                                                        <option value="28">28</option>
+                                                        <option value="29">29</option>
+                                                        <option value="30">30</option>
+                                                        <option value="31">31</option>
+                                                    </select>
+
+                                                        <!--Optional Month-->
+                                                        <select name="month">
+                                                        <option value="01">January</option>
+                                                        <option value="02">February</option>
+                                                        <option value="03">March</option>
+                                                        <option value="04">April</option>
+                                                        <option value="05">May</option>
+                                                        <option value="06">June</option>
+                                                        <option value="07">July</option>
+                                                        <option value="08">August</option>
+                                                        <option value="09">September</option>
+                                                        <option value="10">October</option>
+                                                        <option value="11">November</option>
+                                                        <option value="12">December</option>
+                                                    </select>
+
+                                                        <!--Optional Years-->
+                                                        <select name="years">
+                                                        <option value="2005">2005</option>
+                                                        <option value="2004">2004</option>
+                                                        <option value="2003">2003</option>
+                                                        <option value="2002">2002</option>
+                                                        <option value="2001">2001</option>
+                                                        <option value="2000">2000</option>
+                                                        <option value="1999">1999</option>
+                                                        <option value="1998">1998</option>
+                                                        <option value="1997">1997</option>
+                                                        <option value="1996">1996</option>
+                                                        <option value="1995">1995</option>
+                                                        <option value="1994">1994</option>
+                                                        <option value="1993">1993</option>
+                                                        <option value="1992">1992</option>
+                                                        <option value="1991">1991</option>
+                                                        <option value="1990">1990</option>
+                                                        <option value="1990">1989</option>
+                                                        <option value="1990">1988</option>
+                                                        <option value="1990">1987</option>
+                                                        <option value="1990">1987</option>
+                                                        <option value="1990">1986</option>
+                                                        <option value="1990">1985</option>
+                                                        <option value="1990">1984</option>
+                                                        <option value="1990">1983</option>
+                                                        <option value="1990">1982</option>
+                                                        <option value="1990">1981</option>
+                                                        <option value="1990">1980</option>
+                                                    </select>
+                                                    </td>
+                                                </tr>
+
+                                                <!-- #Gender_From-->
+                                                <tr>
+                                                    <td>Gender : </td>
+                                                    <td>
+                                                        <input type="radio" id="1" name="contact" value="Male" checked>
+                                                        <label for="1">Male</label>
+                                                        <input type="radio" id="2" name="contact" value="Female">
+                                                        <label for="2">Female</label>
+                                                    </td>
+                                                </tr>
+                                        </table>
+
+                                        <!--underline_Gender_From-->
+                                        <hr>
+                                        <p>Creating an you account <a href="#" style="color: dodgerblue;">Terms & Privacy</a>.</p>
+
+                                        <!--All_button-->
+                                        <div class="all_button">
+                                            <tr>
+                                                <td>
+                                                    <button type="submit" class="Register_button">Register</button>
+                                                    <button type="submit" class="Reset_button">Reset</button>
+                                                </td>
+                                            </tr>
+                                        </div>
+
+                                        </form>
+                                    </center>
+                                </fieldset>
+                            </div>
+                            <!--End App_Register_Form-->
+
+                        </div>
+                    </div>
+                </div>
+                <!--End Modal App_Register_Form-->
+
+                <!--Input Search-->
+                <form class="d-flex me-3">
+                    <input class="form-control me-2" type="search " placeholder="Search " aria-label="Search ">
+                    <button class="btn btn-outline-light btn-primary " type="submit ">Search</button>
+                </form>
+
+            </nav>
+        </div>
+        <!--End Menu-->
+
+
+        <!--Carousel-->
+        <div class="row">
+            <div class="col">
+
+
+                <div id="slider1" class="carousel slide" data-bs-ride="carousel">
+
+                    <!--carousel-indicators-->
+                    <ol class="carousel-indicators">
+                        <button class="active" data-bs-target="#slider1" data-bs-slide-to="0">
+                    </button>
+                        <button data-bs-target="#slider1" data-bs-slide-to="1">
+                    </button>
+                        <button data-bs-target="#slider1" data-bs-slide-to="2">
+                    </button>
+                    </ol>
+
+
+                    <div class="carousel-inner">
+                        <!--Figure 1-->
+                        <div class="carousel-item active">
+                            <img src="https://wallpaperboat.com/wp-content/uploads/2019/10/programming-02.jpg" class="d-block w-100">
+                            <!--carousel-caption-->
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4>DevCamp Programmer</h4>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters ,
+                                    as opposed to using 'Content here, content here', making it</p>
+                            </div>
+                        </div>
+                        <!--Figure 2-->
+                        <div class="carousel-item">
+                            <img src="https://images4.alphacoders.com/974/thumb-1920-974317.png" class="d-block w-100">
+                            <!--carousel-caption-->
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4>DevCamp Programmer</h4>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters ,
+                                    as opposed to using 'Content here, content here', making it</p>
+                            </div>
+                        </div>
+
+                        <!--Figure 3-->
+                        <div class="carousel-item ">
+                            <img src="https://emerging-europe.com/wp-content/uploads/2018/11/bigstock-abstract-technology-background-250119211.jpg" class="d-block w-100 ">
+                            <!--carousel-caption-->
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4>DevCamp Programmer</h4>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters ,
+                                    as opposed to using 'Content here, content here', making it</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- control Slide via buttons-->
+                    <button class="carousel-control-prev" data-bs-target="slider1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+
+                    <button class="carousel-control-next" data-bs-target="slider1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!--End Carousel-->
+
+
+        <!--Content-->
+        <div class="row">
+            <div class="col">
+                <div class="bg-light h1100">
+
+                    <!--Content_Porfie-->
+                    <div class="Content_Porfolio justify-content-center">
+
+                        <!--Div_fieldset-->
+                        <div class="All-fieldset justify-content-between">
+                            <fieldset class="outline">
+                                <div class="Text_in_outline">
+
+                                    <!--Text My Application-->
+                                    <a class="text_My_Application"><strong>Programming language</strong></a>
+
+                                    <!--Input Search Product-->
+                                    <input type="text" placeholder="Search Product" name="Search Product" class="Search_Product">
+
+                                    <!--Search button-->
+                                    <button type="submit" class="Search_button">Search</button>
+
+                                    <!--##Text New Product-->
+                                    <a class="text_New_Product" href="#"><strong>New Product</strong></a>
+
+                                </div>
+                            </fieldset>
+                        </div>
+
+
+                        <!--Content_Row_1-->
+                        <div class="Content_Row_1">
+                            <!--Portfolio_1-->
+                            <div class="Portfolio_division_1">
+                                <table>
+                                    <tr>
+                                        <!--img HTML-->
+                                        <td>
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" class="img-HTML">
+                                        </td>
+
+                                        <!--Description Product-->
+                                        <td>
+                                            <ul>
+                                                <li>
+                                                    <a>Product Name: <button type="submit" class="Search_button">HTML</button></a>
+                                                </li>
+                                                <li>
+                                                    <a>Price</a>
+                                                </li>
+                                                <li>
+                                                    <a>Description</a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+
+
+                            <!--Portfolio_2-->
+                            <div class="Portfolio_division_1">
+                                <table>
+                                    <tr>
+                                        <!--img CSS-->
+                                        <td>
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" class="img-CSS">
+                                        </td>
+
+                                        <!--Description Product-->
+                                        <td>
+                                            <ul>
+                                                <li>
+                                                    <a>Product Name: <button type="submit" class="Search_button">CSS</button></a>
+                                                </li>
+                                                <li>
+                                                    <a>Price</a>
+                                                </li>
+                                                <li>
+                                                    <a>Description</a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+
+                        </div>
+                        <!--Finish row 1-->
+
+
+                        <!--Content_Row_2-->
+                        <div class="Content_Row_2">
+
+                            <!--Portfolio_3-->
+                            <div class="Portfolio_division_1">
+                                <table>
+                                    <tr>
+                                        <!--img Javascript-->
+                                        <td>
+                                            <img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-shield-logo-icon-2.png" class="img-Javascript">
+                                        </td>
+
+                                        <!--Description Product-->
+                                        <td>
+                                            <ul>
+                                                <li>
+                                                    <a>Product Name: <button type="submit" class="Search_button">Javascript</button></a>
+                                                </li>
+                                                <li>
+                                                    <a>Price</a>
+                                                </li>
+                                                <li>
+                                                    <a>Description</a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+
+
+                            <!--Portfolio_4-->
+                            <div class="Portfolio_division_1">
+                                <table>
+
+                                    <tr>
+                                        <!--img Nodejs-->
+                                        <td>
+                                            <img src="https://www.mptechnolabs.com/img/nodej.png" class="img-Nodejs">
+                                        </td>
+
+                                        <!--Description Product-->
+                                        <td>
+                                            <ul>
+                                                <li>
+                                                    <a>Product Name: <button type="submit" class="Search_button">Node.js</button></a>
+                                                </li>
+                                                <li>
+                                                    <a>Price</a>
+                                                </li>
+                                                <li>
+                                                    <a>Description</a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+
+                        </div>
+                        <!--Finish row 2-->
+
+
+
+                        <!--Content_Row_3-->
+                        <div class="Content_Row_3">
+
+                            <!--Portfolio_5-->
+                            <div class="Portfolio_division_1">
+                                <table>
+
+                                    <tr>
+                                        <!--img Python-->
+                                        <td>
+                                            <img src="http://assets.stickpng.com/images/5848152fcef1014c0b5e4967.png" class="img-Python">
+                                        </td>
+
+                                        <!--Description Product-->
+                                        <td>
+                                            <ul>
+                                                <li>
+                                                    <a>Product Name: <button type="submit" class="Search_button">Python</button></a>
+                                                </li>
+                                                <li>
+                                                    <a>Price</a>
+                                                </li>
+                                                <li>
+                                                    <a>Description</a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+
+
+                            <!--Portfolio_6-->
+                            <div class="Portfolio_division_1">
+                                <table>
+
+                                    <tr>
+                                        <!--img Java-->
+                                        <td>
+                                            <img src="https://cdn.freebiesupply.com/logos/large/2x/java-logo-png-transparent.png" class="img-Java">
+                                        </td>
+
+                                        <!--Description Product-->
+                                        <td>
+                                            <ul>
+                                                <li>
+                                                    <a>Product Name: <button type="submit" class="Search_button">Java</button></a>
+                                                </li>
+                                                <li>
+                                                    <a>Price</a>
+                                                </li>
+                                                <li>
+                                                    <a>Description</a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+
+                        </div>
+                        <!--Finish row 3-->
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--Footer-->
+        <div class="col h100 bg-dark">
+            <div class="d-flex justify-content-center light">
+                Footer
+            </div>
+        </div>
+
+
+    </div>
+    <!--End container-->
+
+
+</body>
+
+</html>

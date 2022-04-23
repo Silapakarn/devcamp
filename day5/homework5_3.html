@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Homework5_3</title>
+
+</head>
+
+<body>
+    <center>
+        <h1 class="d-flex justify-content-center">Hello ReqRes users!</h1>
+        <table>
+            <tr id="rowDisplay">
+            </tr>
+        </table>
+    </center>
+    <script>
+        function getUser(callback) {
+            axios.get("https://reqres.in/api/users?delay=3").then(function(response) {
+                let aUser = response.data.data
+                let gender = []
+                let ages = []
+                let aLastName = []
+                for (let i = 0; i < aUser.length; i++) {
+                    aLastName[i] = aUser[i].last_name
+
+                }
+                for (let i = 0; i < aUser.length; i++) {
+                    axios.get(`https://api.genderize.io?name=${aUser[i].first_name}`).then(function(response) {
+                        let genderize = response.data.gender
+                        gender.push(genderize)
+                        aUser[i].gender = genderize
+
+                    })
+                    axios.get(`https://api.agify.io/?name=${aUser[i].first_name}`).then(function(response) {
+                        let age = response.data.age
+                        ages.push(age)
+                        aUser[i].age = age
+                    })
+
+                }
+                setTimeout(() => {
+                    callback(aUser, gender, ages)
+                    console.log(aLastName)
+                }, 2000); //Ena function getUser
+
+            })
+        }
+
+
+        // Display to tag table in HTML
+        function display(res, gender, age) {
+            for (let i = 0; i < res.length; i++) {
+
+                document.getElementById("rowDisplay").innerHTML += `<td>
+                    <h3 style="text-align: center;">${res[i].first_name}</h3>
+                    <p style="text-align: center;">${res[i].email}</p>
+                    <p style="text-align: center;">${gender[i]}</p>
+                    <p style="text-align: center;">${age[i]}</p>
+                    <img src="${res[i].avatar}"style="margin-left: 20px;margin-right: 20px;">
+                    </td>`
+            }
+            console.log(res)
+                //End function display
+        }
+        getUser(display)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!--Axios-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+    <style>
+        table tr td {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 class="d-flex justify-content-center">Hello ReqRes users!</h1>
+
+    <!--<table>
+        <tr id="user_name"></tr>
+        <tr id="user_email"></tr>
+        <tr id="user_Avatar"></tr>
+    </table>-->
+
+    <table class="d-flex justify-content-center">
+        <tr id="rowDisplay"></tr>
+    </table>
+
+    <script>
+        axios.get("https://reqres.in/api/users/").then(function(response) {
+
+            let rowDisplay = document.getElementById('rowDisplay');
+            let textHtml = [];
+
+            for (let i = 0; i < response.data.data.length; i++) {
+                let img = "<p><img src='" + response.data.data[i].avatar + "'></p>";
+                textHtml += "<td><strong>" + response.data.data[i].first_name + "</strong><p>" + response.data.data[i].email + "</p>" + img + "</td>";
+            }
+            rowDisplay.innerHTML = textHtml;
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+body {
+    background-color: grey;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.brown {
+    background-color: brown;
+}
+
+.grey {
+    background-color: rgb(41, 41, 41);
+}
+
+.light {
+    color: rgb(243, 243, 243);
+}
+
+.h50 {
+    height: 50px;
+}
+
+.h100 {
+    height: 100px;
+}
+
+.h1100 {
+    height: 1100px;
+}
