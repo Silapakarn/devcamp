@@ -5,24 +5,28 @@ axios.get("homework1-4.json").then(function(response) {
     let Data_Api = response.data;
     console.log(Data_Api);
 
+    /*
+    let dataFilter_gender_and_friends = Data_Api.filter( obj => {
+        return obj.gender == 'male' && obj.friends.length >= 2 
+    });
+    console.log(dataFilter_gender_and_friends);*/
 
     
     //Variable Male Filter
     let MaleFilter = Data_Api.filter(obj => obj.gender === "male")
     console.log(MaleFilter);
 
-
-    
     //Variable Friend Filter
-    let FriendFilter = Data_Api.filter(obj => obj.friends.length >= 2)
+    let FriendFilter = MaleFilter.filter(obj => obj.friends.length >= 2)
     console.log(FriendFilter);
 
-    
+
     //Variable Filter_Request_friend
     let Filter_Request_friend = FriendFilter.filter(f => f.name);
     console.log(Filter_Request_friend);
 
     
+
     //Map fine Filter Request details
     let Filter_Request_details = Filter_Request_friend.map(obj => {
         return{
@@ -30,34 +34,23 @@ axios.get("homework1-4.json").then(function(response) {
             gender: obj.gender, 
             company: obj.company, 
             email: obj.email, 
-            friends: obj.friends, 
+            friends: obj.friends,
             //reduce_money
             balance: parseFloat(obj.balance.replace("$","").replace(",","")/10).toFixed(2).toString()
+
         }   
     })
     console.log(Filter_Request_details);
 
-    /*
-    //callbackFunction reduce_money
-    const callbackFT_reduce_money = (obj) => {
-        parseFloat(obj.balance)
-        return obj.balance / 10
-    };
 
-    
-    //reduce_money
-    let Result_reduce_money = Filter_Request_details.reduce(callbackFT_reduce_money, 0);
-    //Test Result_reduce_money
-    console.log(Result_reduce_money);*/
-
-    
-    //Setup <tag table bootstrap>
+   ///Setup <tag table bootstrap>
     result += `<table class="table">
     <thead><tr>
     <th scope="col">name</th>
     <th scope="col">gender</th>
     <th scope="col">company</th>
-    <th scope="col">friends</th>
+    <th scope="col">Email</th>
+    <th scope="col">friend</th>
     <th scope="col">balance</th>
     </tr></thead><tbody><tr>`;
 
@@ -78,7 +71,10 @@ axios.get("homework1-4.json").then(function(response) {
         //Col 4
         result += `<td>${Filter_Request_details[i].email}</td>`;
 
-        //Col 5
+        //Col 5 
+        result += `<td>${Filter_Request_details[i].friends}</td>`;
+
+        //Col 6
         result += `<td>$${Filter_Request_details[i].balance}</td>`;
 
         //End 
@@ -87,5 +83,6 @@ axios.get("homework1-4.json").then(function(response) {
 
     //Show result in "id = display"
     result += `</tr></tbody></table>`;
+    
     document.getElementById("display").innerHTML = result;
 });

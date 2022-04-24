@@ -37,7 +37,11 @@
         <tr id="rowDisplay"></tr>
     </table>
 
+
+
+    <!--JS-->
     <script>
+        
         axios.get("https://reqres.in/api/users/").then(function(response) {
 
             let rowDisplay = document.getElementById('rowDisplay');
@@ -49,6 +53,7 @@
             }
             rowDisplay.innerHTML = textHtml;
         });
+
     </script>
 
 </body>
