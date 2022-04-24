@@ -55,6 +55,16 @@ axios.get("homework1-4.json").then(function(response) {
     </tr></thead><tbody><tr>`;
 
     
+    //Data_friends_details
+    let Data_friends_details = (index_friends) => {
+        let result = "";
+        for (let i = 0; i < Filter_Request_details[index_friends].friends.length; i++) {
+            result += `<li>${Filter_Request_details[index_friends].friends[i].name}</li>`;
+        }
+        return `<ol>` + result + `</ol>`; 
+    }
+
+
     //Loop Filter_Request_details show in <tag table bootstrap>
     for (i in Filter_Request_details) {
         console.log(i);
@@ -72,7 +82,7 @@ axios.get("homework1-4.json").then(function(response) {
         result += `<td>${Filter_Request_details[i].email}</td>`;
 
         //Col 5 
-        result += `<td>${Filter_Request_details[i].friends}</td>`;
+        result += `<td><ul>${Data_friends_details(i)}</ul></td>`;
 
         //Col 6
         result += `<td>$${Filter_Request_details[i].balance}</td>`;
