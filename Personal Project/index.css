@@ -35,8 +35,12 @@
     height: 200px;
 }
 
+
+/***********footer**********/
+
 #logo_footer {
     padding-top: 20px;
+    border: 1px solid red;
 }
 
 #logo_footer img {
