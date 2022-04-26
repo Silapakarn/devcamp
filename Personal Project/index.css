@@ -1,0 +1,145 @@
+#about {
+    min-height: 200px;
+    position: relative;
+    background-image: url("./img/introduce\ section.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+    background-attachment: fixed;
+    margin-top: 20px;
+    height: 500px;
+}
+
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    padding-top: 90px;
+    padding-left: 40px;
+    padding-right: 90px;
+}
+
+#teams-items {
+    text-align: center;
+    border-right: 1px solid rgb(192, 192, 192);
+    padding: 4rem;
+    background-color: rgb(243, 243, 243);
+}
+
+#teams-items img {
+    padding-bottom: 40px;
+    width: 200px;
+    height: 200px;
+}
+
+#logo_footer {
+    padding-top: 20px;
+}
+
+#logo_footer img {
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+#logo_footer p {
+    margin-left: 30px;
+    font-size: 12px;
+}
+
+#manu_footer {
+    width: 30%;
+}
+
+#manu_footer ul {
+    list-style: none;
+}
+
+#manu_footer ul li a {
+    color: white;
+}
+
+#row_footer {
+    border-bottom: 1px solid rgb(102, 102, 102);
+}
+
+#Row_Web_content {
+    padding: 6rem;
+}
+
+#Market_Capitalization {
+    padding-left: 45px;
+    padding-right: 25px;
+    height: 20%;
+}
+
+#Market_Capitalization h2 {
+    border-bottom: 4px solid rgb(255, 147, 85);
+    padding-bottom: 10px;
+    width: 40%;
+    color: rgb(80, 80, 80);
+}
+
+#Market_Capitalization div {
+    margin-top: 10px;
+}
+
+#Web_content_ul ul {
+    padding-left: 60px;
+    list-style: none;
+    margin-left: 20px;
+    border-left: 2px solid rgb(235, 235, 235);
+}
+
+
+/*****button_introduce_Web*****/
+
+#button_introduce_Web span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#button_introduce_Web span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#button_introduce_Web:hover span {
+    padding-right: 25px;
+}
+
+#button_introduce_Web:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+/*****navbar_Register_Modal*****/
+
+#navbar_nav_ul {
+    margin-left: 25px;
+    border: 1px solid red;
+}
+
+#Register_Modal {
+    border: 1px solid red;
+    margin: auto;
+    width: 20%;
+    justify-content: right;
+}
+
+#group_btn_Register {
+    border: 1px solid rgb(255, 230, 0);
+}
+
+#btn_Register {
+    height: 40px;
+}

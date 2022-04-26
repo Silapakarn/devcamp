@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!--Axios-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./register_form.css">
+    <link rel="stylesheet" href="./index.css">
+
+    <!--JS-->
+    <script src="./index.js"></script>
+
+
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!--Navbar Logo-->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-4" href="#"><img src="./img/logo.png"></a>
+            <form class="d-flex justify-content-center">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success me-2" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <!--Navbar Education-->
+    <nav class="row navbar navbar-expand-lg navbar-light bg-success p-2 text-light bg-opacity-25">
+
+        <!--Row-->
+        <div class="col container">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+            <!--Row-->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav" id="navbar_nav_ul">
+
+
+
+                    <!--Dropdown Education-->
+                    <li class="nav-item dropdown me-5">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Education
+                    </a>
+                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                            <li><a class="dropdown-item" href="#">Simulation for Finance</a></li>
+                            <li><a class="dropdown-item" href="#">Quantitative Trading Systems</a></li>
+                            <li><a class="dropdown-item" href="#">AI for Finance: False Signal Detection</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Other</a></li>
+                        </ul>
+                    </li>
+
+
+                    <!--Dropdown Market-->
+                    <li class="nav-item dropdown me-5">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Markets
+                    </a>
+                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                            <li><a class="dropdown-item" href="#">Trading News</a></li>
+                            <li><a class="dropdown-item" href="#">Company News</a></li>
+                            <li><a class="dropdown-item" href="#">Markets News</a></li>
+                        </ul>
+                    </li>
+
+
+
+                    <!--Dropdown Your Money-->
+                    <li class="nav-item dropdown me-5">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Your Money
+                    </a>
+                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                            <li><a class="dropdown-item" href="#">Wealth Management</a></li>
+                            <li><a class="dropdown-item" href="#">Budgeting/Saving</a></li>
+                            <li><a class="dropdown-item" href="#">Banking</a></li>
+                            <li><a class="dropdown-item" href="#">Budgeting/Saving</a></li>
+                            <li><a class="dropdown-item" href="#">Best Online Brokers</a></li>
+                        </ul>
+                    </li>
+
+
+
+                    <!--Dropdown Advisors-->
+                    <li class="nav-item dropdown me-5">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Advisors
+                    </a>
+                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                            <li><a class="dropdown-item" href="#">Practice Management</a></li>
+                            <li><a class="dropdown-item" href="#">Continuing Education</a></li>
+                            <li><a class="dropdown-item" href="#">WEALTH MANAGEMENT</a></li>
+                            <li><a class="dropdown-item" href="#">Portfolio Construction</a></li>
+                            <li><a class="dropdown-item" href="#">Financial Professional Courses</a></li>
+                        </ul>
+                    </li>
+
+
+                    <!--Dropdown study plan-->
+                    <li class="nav-item dropdown me-5">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Study Plan
+                    </a>
+                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                            <li><a class="dropdown-item" href="#">Plan A</a></li>
+                            <li><a class="dropdown-item" href="#">Plan B</a></li>
+                            <li><a class="dropdown-item" href="#">Plan C</a></li>
+                            <li><a class="dropdown-item" href="#">Plan D</a></li>
+                            <li><a class="dropdown-item" href="#">Plan E</a></li>
+                        </ul>
+                    </li>
+
+
+                    <!--Dropdown financial math-->
+                    <li class="nav-item dropdown me-3">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Financial Math
+                    </a>
+                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                            <li><a class="dropdown-item" href="#">Practice Management</a></li>
+                            <li><a class="dropdown-item" href="#">Continuing Education</a></li>
+                            <li><a class="dropdown-item" href="#">WEALTH MANAGEMENT</a></li>
+                            <li><a class="dropdown-item" href="#">Portfolio Construction</a></li>
+                            <li>
+                                <li><a class="dropdown-item" href="#">Financial Professional Courses</a></li>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Register Modal -->
+                <from class="d-flex" id="Register_Modal">
+                    <div class="d-flex" id="group_btn_Register">
+                        <button class="btn btn-dark me-2" type="submit" id="btn_Register"><a class="text-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Register
+                        </a></button>
+
+                        <button class="btn btn-dark me-2" type="submit" id="btn_Register"><a class="text-light">
+                            Sign in</a></button>
+                    </div>
+                </from>
+
+            </div>
+
+        </div>
+    </nav>
+    <!--End Navbar Education-->
+
+
+    <!--Register Modal -->
+    <div class="modal fade" id="exampleModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+
+                <!--App--Register_Form-->
+                <div class="form">
+
+                    <fieldset class="container_fieldset">
+                        <!--Title_Register_Form-->
+                        <legend class="text_title_Register_Form">Register Form</legend>
+                        <center>
+                            <table>
+                                <form action="">
+                                    <!--input_First_name-->
+                                    <tr>
+                                        <td><label>First name : </label></td>
+                                        <td><input class="input_Register_Form" type="text" placeholder="First name" name="First_name" id="First_name"></td>
+                                    </tr>
+
+
+                                    <!--input_Last_name-->
+                                    <tr>
+                                        <td><label>Last name : </label></td>
+                                        <td><input class="input_Register_Form" type="text" placeholder="Last name" name="Last_name" id="Last_name"></td>
+                                    </tr>
+
+                                    <!--input_Password-->
+                                    <tr>
+                                        <td><label>Password : </label></td>
+                                        <td><input class="input_Register_Form" type="password" placeholder="Password" name="Password" id="Password"></td>
+                                    </tr>
+
+                                    <!--input_Password-->
+                                    <tr>
+                                        <td><label>Confirm Password : </label></td>
+                                        <td><input class="input_Register_Form" type="text" placeholder="Confirm Password" name="Confirm_Password" id="Confirm_Password"></td>
+                                    </tr>
+
+                                    <!--input_Enter_Email-->
+                                    <tr>
+                                        <td><label>Email : </label></td>
+                                        <td> <input class="input_Register_Form" type="email" placeholder="Enter Email" name="Email" id="Email"></td>
+                                    </tr>
+
+                                    <!--input_Confirm_Email-->
+                                    <tr>
+                                        <td><label>Confirm Email : </label></td>
+                                        <td><input class="input_Register_Form" type="text" placeholder="Enter Confirm Email" name="Confirm_Email" id="Confirm_Email"></td>
+                                    </tr>
+
+                                    <!--Birthday_From-->
+                                    <tr>
+                                        <td>Birthday :</td>
+                                        <!--Optional Date-->
+                                        <td>
+                                            <select name="day">
+                                        <option value="01">1</option>
+                                        <option value="02">2</option>
+                                        <option value="03">3</option>
+                                        <option value="04">4</option>
+                                        <option value="05">5</option>
+                                        <option value="06">6</option>
+                                        <option value="07">7</option>
+                                        <option value="08">8</option>
+                                        <option value="09">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+
+                                            <!--Optional Month-->
+                                            <select name="month">
+                                        <option value="01">January</option>
+                                        <option value="02">February</option>
+                                        <option value="03">March</option>
+                                        <option value="04">April</option>
+                                        <option value="05">May</option>
+                                        <option value="06">June</option>
+                                        <option value="07">July</option>
+                                        <option value="08">August</option>
+                                        <option value="09">September</option>
+                                        <option value="10">October</option>
+                                        <option value="11">November</option>
+                                        <option value="12">December</option>
+                                    </select>
+
+                                            <!--Optional Years-->
+                                            <select name="years">
+                                        <option value="2005">2005</option>
+                                        <option value="2004">2004</option>
+                                        <option value="2003">2003</option>
+                                        <option value="2002">2002</option>
+                                        <option value="2001">2001</option>
+                                        <option value="2000">2000</option>
+                                        <option value="1999">1999</option>
+                                        <option value="1998">1998</option>
+                                        <option value="1997">1997</option>
+                                        <option value="1996">1996</option>
+                                        <option value="1995">1995</option>
+                                        <option value="1994">1994</option>
+                                        <option value="1993">1993</option>
+                                        <option value="1992">1992</option>
+                                        <option value="1991">1991</option>
+                                        <option value="1990">1990</option>
+                                        <option value="1990">1989</option>
+                                        <option value="1990">1988</option>
+                                        <option value="1990">1987</option>
+                                        <option value="1990">1987</option>
+                                        <option value="1990">1986</option>
+                                        <option value="1990">1985</option>
+                                        <option value="1990">1984</option>
+                                        <option value="1990">1983</option>
+                                        <option value="1990">1982</option>
+                                        <option value="1990">1981</option>
+                                        <option value="1990">1980</option>
+                                    </select>
+                                        </td>
+                                    </tr>
+
+                                    <!-- #Gender_From-->
+                                    <tr>
+                                        <td>Gender : </td>
+                                        <td>
+                                            <input type="radio" id="1" name="contact" value="Male" checked>
+                                            <label for="1">Male</label>
+                                            <input type="radio" id="2" name="contact" value="Female">
+                                            <label for="2">Female</label>
+                                        </td>
+                                    </tr>
+                            </table>
+
+                            <!--underline_Gender_From-->
+                            <hr>
+                            <p>Creating an you account <a href="#" style="color: dodgerblue;">Terms & Privacy</a>.</p>
+
+                            <!--All_button-->
+                            <div class="all_button">
+                                <tr>
+                                    <td>
+                                        <button type="submit" class="Register_button">Register</button>
+                                        <button type="submit" class="Reset_button">Reset</button>
+                                    </td>
+                                </tr>
+                            </div>
+
+                            </form>
+                        </center>
+                    </fieldset>
+                </div>
+                <!--End App_Register_Form-->
+
+            </div>
+        </div>
+    </div>
+    <!--End Modal App_Register_Form-->
+
+
+
+    <!--Display API-->
+    <div class="row h-500 m-auto p-5 bg-light" id="Display_API">
+        <div class="col d-flex justify-content-center fs-1" id="Display_API">Display API</div>
+    </div>
+
+
+    <!--Cards-->
+    <section>
+        <div class="row justify-content-center mt-3 ms-2 me-2">
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Quantitative Trading Systems</h5>
+                        <p class="card-text">Programming and quantitative trading course taught by in-the-industry algorithmic traders.</p>
+
+                        <!--Animated Buttons-->
+                        <button type="button" class="btn btn-outline-success" id="button_introduce_Web" style="vertical-align:middle"><span>LEARN MORE</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Python For Algorithmic Trading</h5>
+                        <p class="card-text">Build your own trading applications, get market and chart data and view your account data. Use Python.</p>
+
+                        <!--Animated Buttons-->
+                        <button type="button" class="btn btn-outline-success" id="button_introduce_Web" style="vertical-align:middle"><span>LEARN MORE</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Machine Learning for Algorithmic Trading</h5>
+                        <p class="card-text">Leverage machine learning to design and back-test automated trading strategies for real-world.</p>
+
+                        <!--Animated Buttons-->
+                        <button type="button" class="btn btn-outline-success" id="button_introduce_Web" style="vertical-align:middle"><span>LEARN MORE</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Probability for Financial Machine Learning</h5>
+                        <p class="card-text">Sample spaces and events Properties of probability Conditional probability Independence of event.</p>
+
+                        <!--Animated Buttons-->
+                        <button type="button" class="btn btn-outline-success" id="button_introduce_Web" style="vertical-align:middle"><span>LEARN MORE</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Tag Cards-->
+
+
+
+
+    <!--introduce Web section-->
+    <section id="about" class="py-5">
+        <div class="dark-overlay">
+            <div class="row">
+                <div class="col">
+                    <div class="container" id="Welcome">
+                        <h1>PIONEER FOR THE BETTER</h1>
+                        <p>At Quant World. we never cease to develop and innovate financial technologies on top of our “Customer First” mindset. We are the driving force behind KBank’s success as well as their navigator exploring the digital world beyond
+                            Thailand. Our wide-ranging online banking services are equipped with concrete infrastructure and strong barriers capable of guarding customers’ valuable assets and data.</p>
+                        <button type="button" class="btn btn-success" id="button_introduce_Web" style="vertical-align:middle"><span>LEARN MORE</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End introduce Web section-->
+
+
+    <!--Web content-->
+    <section>
+        <!--Row-->
+        <div class="row" id="Row_Web_content">
+            <div class="col-md-8" id="Market_Capitalization">
+                <h2>Market Capitalization</h2>
+                <p>Market capitalization is the total dollar market value of all of a company's outstanding shares.</p>
+                <a href="#">Read more</a>
+
+                <div class="row">
+                    <p>SUBSCRIBE TO 'TERM OF THE DAY' and learn a new financial term every day. Stay informed and make smart financial decisions.</p>
+                </div>
+                <button type="button" class="btn btn-outline-secondary">SIGN UP NOW!</button>
+            </div>
+            <div class="col-md-4" id="Web_content_ul">
+                <ul>
+                    <li><a class="nav-link" href="#">Corporate Bond</a></li>
+                    <li><a class="nav-link" href="#">Federal Deposit Insurance Corporation (FDIC)</a></li>
+                    <li><a class="nav-link" href="#">Price-to-Earnings (P/E) Ratio</a></li>
+                    <li><a class="nav-link" href="#">Bond</a></li>
+                    <li><a class="nav-link" href="#">Index</a></li>
+                    <li><a class="nav-link" href="#">Guardian IRA</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--End Web content-->
+
+
+    <!--Teams-->
+    <section>
+        <!--Row-->
+        <div class="row">
+            <!--Col 1-->
+            <div class="col-md-4" id="teams-items">
+                <img src="./img/icon_1.png" class="img-fluid rounded-3">
+                <h4>STOCK SIMULATOR</h4>
+                <p>Compete risk free with $100,000 in virtual cash.</p>
+                <button type="button" class="btn btn-outline-secondary">GET STARTED</button>
+            </div>
+
+            <!--Col 2-->
+            <div class="col-md-4" id="teams-items">
+                <img src="./img/icon_2.png" class="img-fluid rounded-3">
+                <h4>INVESTOPEDIA ACADEMY</h4>
+                <p>Self-paced, online courses from expert instructors.</p>
+                <button type="button" class="btn btn-outline-secondary">GET STARTED</button>
+            </div>
+
+            <!--Col 3-->
+            <div class="col-md-4" id="teams-items">
+                <img src="./img/icon_3.png" class="img-fluid rounded-3">
+                <h4>THE MARKET SUM</h4>
+                <p>The news and analysis you need after the closing bell.</p>
+                <button type="button" class="btn btn-outline-secondary">GET STARTED</button>
+            </div>
+        </div>
+
+    </section>
+    <!--End Teams-->
+
+
+
+    <!--Footer-->
+    <footer class="p-4 bg-dark">
+        <div class="container">
+            <!--Row 1-->
+            <div class="row text-light" id="row_footer">
+                <div class="col-4" id="logo_footer">
+                    <img src="./img/logo_footer.png">
+                    <p>
+                        Copyright &copy; Quantitative World Official 2022
+                    </p>
+                </div>
+                <div class="col-4" id="manu_footer">
+                    <ul>
+                        <li><a class="nav-link" href="#">Home</a></li>
+                        <li><a class="nav-link" href="#">About</a></li>
+                        <li><a class="nav-link" href="#">Co-Innovation</a></li>
+                        <li><a class="nav-link" href="#">Life</a></li>
+                    </ul>
+                </div>
+                <div class="col-4" id="manu_footer">
+                    <ul>
+                        <li><a class="nav-link" href="#">Algorithmic Trading</a></li>
+                        <li><a class="nav-link" href="#">Market Analysis</a></li>
+                        <li><a class="nav-link" href="#">Machine Learning</a></li>
+                        <li><a class="nav-link" href="#">Probability</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
