@@ -38,9 +38,13 @@
 
 
 
+
+
     <!--API-->
     <script>
-        let resultDisplay = document.getElementById("resultDisplay");
+
+        let resultDisplay = document.getElementById("resultDisplay")
+
 
         /*get all Key : Value for bring information to display*/
         let textHtml = `<table><tr><td>Category</td>`;
@@ -118,6 +122,8 @@
                 }
 
                 textHtml += "</tr></table>";
+
+
                 resultDisplay.innerHTML = textHtml;
             });
         });
