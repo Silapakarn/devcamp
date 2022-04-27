@@ -10,10 +10,6 @@ axios.get("homework1-4.json").then(function(response) {
         return obj.gender == 'male' && obj.friends.length >= 2 
     });
     console.log(dataFilter_gender_and_friends);*/
-<<<<<<< HEAD
-
-=======
->>>>>>> d75c61582ff7675441f877d70b360222d273355e
 
     //Variable Male Filter
     let MaleFilter = Data_Api.filter(obj => obj.gender === "male")
@@ -28,7 +24,6 @@ axios.get("homework1-4.json").then(function(response) {
     let Filter_Request_friend = FriendFilter.filter(f => f.name);
     console.log(Filter_Request_friend);
 
-<<<<<<< HEAD
 
 
     //Map fine Filter Request details
@@ -43,31 +38,11 @@ axios.get("homework1-4.json").then(function(response) {
             balance: parseFloat(obj.balance.replace("$", "").replace(",", "") / 10).toFixed(2).toString()
 
         }
-=======
-    
-
-    //Map fine Filter Request details
-    let Filter_Request_details = Filter_Request_friend.map(obj => {
-        return{
-            name: obj.name, 
-            gender: obj.gender, 
-            company: obj.company, 
-            email: obj.email, 
-            friends: obj.friends,
-            //reduce_money
-            balance: parseFloat(obj.balance.replace("$","").replace(",","")/10).toFixed(2).toString()
-
-        }   
->>>>>>> d75c61582ff7675441f877d70b360222d273355e
     })
     console.log(Filter_Request_details);
 
 
-<<<<<<< HEAD
     ///Setup <tag table bootstrap>
-=======
-   ///Setup <tag table bootstrap>
->>>>>>> d75c61582ff7675441f877d70b360222d273355e
     result += `<table class="table">
     <thead><tr>
     <th scope="col">name</th>
@@ -78,22 +53,13 @@ axios.get("homework1-4.json").then(function(response) {
     <th scope="col">balance</th>
     </tr></thead><tbody><tr>`;
 
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> d75c61582ff7675441f877d70b360222d273355e
     //Data_friends_details
     let Data_friends_details = (index_friends) => {
         let result = "";
         for (let i = 0; i < Filter_Request_details[index_friends].friends.length; i++) {
             result += `<li>${Filter_Request_details[index_friends].friends[i].name}</li>`;
         }
-<<<<<<< HEAD
         return `<ol>` + result + `</ol>`;
-=======
-        return `<ol>` + result + `</ol>`; 
->>>>>>> d75c61582ff7675441f877d70b360222d273355e
     }
 
 
@@ -125,10 +91,5 @@ axios.get("homework1-4.json").then(function(response) {
 
     //Show result in "id = display"
     result += `</tr></tbody></table>`;
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> d75c61582ff7675441f877d70b360222d273355e
     document.getElementById("display").innerHTML = result;
 });
