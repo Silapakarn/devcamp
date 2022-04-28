@@ -7,11 +7,11 @@ axios.get('./Data_API/response_API_yahoofinanc.json').then(function(response) {
 
 
     //Variable Data_ Filter
-    let Data_Filter = Data_Api.map( obj =>{
-        return{
+    let Data_Filter = Data_Api.map(obj => {
+        return {
             symbol: obj.symbol,
             longName: obj.longName,
-            regularMarketOpen : obj.regularMarketOpen,
+            regularMarketOpen: obj.regularMarketOpen,
             bid: obj.bid.toLocaleString(),
             ask: obj.ask.toLocaleString(),
             averageDailyVolume10Day: obj.averageDailyVolume10Day.toLocaleString(),
@@ -36,28 +36,28 @@ axios.get('./Data_API/response_API_yahoofinanc.json').then(function(response) {
     //Loop Data_Filter show in <tag table bootstrap>
     for (i in Data_Filter) {
         console.log(i);
-        
+
         //Col 1
-        result +=  `<td id="LoopDataApi"><a type="button">${Data_Filter[i].symbol}</a></td>`;
+        result += `<td id="LoopDataApi"><a type="button">${Data_Filter[i].symbol}</a></td>`;
 
         //Col 2
-        result +=  `<td id="LoopDataApi"><a type="button">${Data_Filter[i].longName}</a></td>`;
+        result += `<td id="LoopDataApi"><a type="button">${Data_Filter[i].longName}</a></td>`;
 
         //Col 3
-        result +=  `<td id="LoopDataApi"><a type="button">${Data_Filter[i].regularMarketOpen}</a></td>`;
+        result += `<td id="LoopDataApi"><a type="button">${Data_Filter[i].regularMarketOpen}</a></td>`;
 
         //Col 4
-        result +=  `<td id="LoopDataApi"><a type="button">${Data_Filter[i].bid}</a></td>`;
+        result += `<td id="LoopDataApi"><a type="button">${Data_Filter[i].bid}</a></td>`;
 
         //Col 5
-        result +=  `<td id="LoopDataApi"><a type="button">${Data_Filter[i].ask}</a></td>`;
+        result += `<td id="LoopDataApi"><a type="button">${Data_Filter[i].ask}</a></td>`;
 
         //Col 6
-        result +=  `<td id="LoopDataApi"><a type="button">${Data_Filter[i].averageDailyVolume10Day}</a></td>`;
+        result += `<td id="LoopDataApi"><a type="button">${Data_Filter[i].averageDailyVolume10Day}</a></td>`;
 
         //Col 7
-        result +=  `<td id="LoopDataApi"><a type="button">${Data_Filter[i].twoHundredDayAverageChange}</a></td>`;
-    
+        result += `<td id="LoopDataApi"><a type="button">${Data_Filter[i].twoHundredDayAverageChange}</a></td>`;
+
         //End 
         result += `</tr><tr>`;
     }

@@ -27,144 +27,145 @@
 
 
     <!--Navbar Logo-->
-    <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand ms-4" href="#"><img src="./img/logo.png"></a>
-            <form class="d-flex justify-content-center">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success me-2" type="submit">Search</button>
+    <div class="container-fluid">
+        <nav class="row navbar navbar-light bg-light d-flex">
+            <a class="col-md-4  navbar-brand ms-3" href="#"><img src="./img/logo.png"></a>
+
+            <!--From Search-->
+            <form class="col-md-8 d-flex justify-content-end" id="from_input">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="input_Logo">
+
+                <!--Search-->
+                <button class="btn btn-secondary me-4 " type="submit">Search</button>
+
+                <!--Register-->
+                <button class="btn btn-outline-success me-2 " type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Register</button>
+
+                <!--Sign in-->
+                <button class="btn btn-outline-success" type="submit" id="btn_Signin">Sign in</button>
+
             </form>
-        </div>
-    </nav>
+        </nav>
+    </div>
+
 
 
     <!--Navbar Education-->
-    <nav class="row navbar navbar-expand-lg navbar-light bg-success p-2 text-light bg-opacity-25">
-
+    <div class="container-fluid">
         <!--Row-->
-        <div class="col container">
+        <nav class="row navbar navbar-expand-lg navbar-light bg-success text-light bg-opacity-25">
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+            <!--Col-->
+            <div class="col-md">
 
-            <!--Row-->
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav" id="navbar_nav_ul">
-
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
 
-                    <!--Dropdown Education-->
-                    <li class="nav-item dropdown me-5">
-                        <a class="nav-link dropdown-toggle text-light" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Education
-                    </a>
-                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                            <li><a class="dropdown-item" href="#">Simulation for Finance</a></li>
-                            <li><a class="dropdown-item" href="#">Quantitative Trading Systems</a></li>
-                            <li><a class="dropdown-item" href="#">AI for Finance: False Signal Detection</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Other</a></li>
-                        </ul>
-                    </li>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav" id="navbar_nav_ul">
+
+                        <!--Dropdown Education-->
+                        <li class="nav-item dropdown me-5">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Education
+                        </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item" href="#">Simulation for Finance</a></li>
+                                <li><a class="dropdown-item" href="#">Quantitative Trading Systems</a></li>
+                                <li><a class="dropdown-item" href="#">AI for Finance: False Signal Detection</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Other</a></li>
+                            </ul>
+                        </li>
 
 
-                    <!--Dropdown Market-->
-                    <li class="nav-item dropdown me-5">
-                        <a class="nav-link dropdown-toggle text-light" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Markets
-                    </a>
-                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                            <li><a class="dropdown-item" href="#">Trading News</a></li>
-                            <li><a class="dropdown-item" href="#">Company News</a></li>
-                            <li><a class="dropdown-item" href="#">Markets News</a></li>
-                        </ul>
-                    </li>
-
-
-
-                    <!--Dropdown Your Money-->
-                    <li class="nav-item dropdown me-5">
-                        <a class="nav-link dropdown-toggle text-light" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Your Money
-                    </a>
-                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                            <li><a class="dropdown-item" href="#">Wealth Management</a></li>
-                            <li><a class="dropdown-item" href="#">Budgeting/Saving</a></li>
-                            <li><a class="dropdown-item" href="#">Banking</a></li>
-                            <li><a class="dropdown-item" href="#">Budgeting/Saving</a></li>
-                            <li><a class="dropdown-item" href="#">Best Online Brokers</a></li>
-                        </ul>
-                    </li>
+                        <!--Dropdown Market-->
+                        <li class="nav-item dropdown me-5">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Markets
+                        </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item" href="#">Trading News</a></li>
+                                <li><a class="dropdown-item" href="#">Company News</a></li>
+                                <li><a class="dropdown-item" href="#">Markets News</a></li>
+                            </ul>
+                        </li>
 
 
 
-                    <!--Dropdown Advisors-->
-                    <li class="nav-item dropdown me-5">
-                        <a class="nav-link dropdown-toggle text-light" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Advisors
-                    </a>
-                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                            <li><a class="dropdown-item" href="#">Practice Management</a></li>
-                            <li><a class="dropdown-item" href="#">Continuing Education</a></li>
-                            <li><a class="dropdown-item" href="#">WEALTH MANAGEMENT</a></li>
-                            <li><a class="dropdown-item" href="#">Portfolio Construction</a></li>
-                            <li><a class="dropdown-item" href="#">Financial Professional Courses</a></li>
-                        </ul>
-                    </li>
+                        <!--Dropdown Your Money-->
+                        <li class="nav-item dropdown me-5">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Your Money
+                        </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item" href="#">Wealth Management</a></li>
+                                <li><a class="dropdown-item" href="#">Budgeting/Saving</a></li>
+                                <li><a class="dropdown-item" href="#">Banking</a></li>
+                                <li><a class="dropdown-item" href="#">Budgeting/Saving</a></li>
+                                <li><a class="dropdown-item" href="#">Best Online Brokers</a></li>
+                            </ul>
+                        </li>
 
 
-                    <!--Dropdown study plan-->
-                    <li class="nav-item dropdown me-5">
-                        <a class="nav-link dropdown-toggle text-light" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Study Plan
-                    </a>
-                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                            <li><a class="dropdown-item" href="#">Plan A</a></li>
-                            <li><a class="dropdown-item" href="#">Plan B</a></li>
-                            <li><a class="dropdown-item" href="#">Plan C</a></li>
-                            <li><a class="dropdown-item" href="#">Plan D</a></li>
-                            <li><a class="dropdown-item" href="#">Plan E</a></li>
-                        </ul>
-                    </li>
-
-
-                    <!--Dropdown financial math-->
-                    <li class="nav-item dropdown me-3">
-                        <a class="nav-link dropdown-toggle text-light" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Financial Math
-                    </a>
-                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                            <li><a class="dropdown-item" href="#">Practice Management</a></li>
-                            <li><a class="dropdown-item" href="#">Continuing Education</a></li>
-                            <li><a class="dropdown-item" href="#">WEALTH MANAGEMENT</a></li>
-                            <li><a class="dropdown-item" href="#">Portfolio Construction</a></li>
-                            <li>
+                        <!--Dropdown Advisors-->
+                        <li class="nav-item dropdown me-5">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Advisors
+                        </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item" href="#">Practice Management</a></li>
+                                <li><a class="dropdown-item" href="#">Continuing Education</a></li>
+                                <li><a class="dropdown-item" href="#">WEALTH MANAGEMENT</a></li>
+                                <li><a class="dropdown-item" href="#">Portfolio Construction</a></li>
                                 <li><a class="dropdown-item" href="#">Financial Professional Courses</a></li>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                            </ul>
+                        </li>
 
-                <!-- Register Modal -->
-                <from class="d-flex" id="Register_Modal">
-                    <div class="d-flex" id="group_btn_Register">
-                        <button class="btn btn-dark me-2" type="submit" id="btn_Register"><a class="text-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Register
-                        </a></button>
 
-                        <button class="btn btn-dark me-2" type="submit" id="btn_Register"><a class="text-light">
-                            Sign in</a></button>
-                    </div>
-                </from>
+                        <!--Dropdown study plan-->
+                        <li class="nav-item dropdown me-5">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Study Plan
+                        </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item" href="#">Plan A</a></li>
+                                <li><a class="dropdown-item" href="#">Plan B</a></li>
+                                <li><a class="dropdown-item" href="#">Plan C</a></li>
+                                <li><a class="dropdown-item" href="#">Plan D</a></li>
+                                <li><a class="dropdown-item" href="#">Plan E</a></li>
+                            </ul>
+                        </li>
+
+
+                        <!--Dropdown financial math-->
+                        <li class="nav-item dropdown me-3">
+                            <a class="nav-link dropdown-toggle text-light" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Financial Math
+                        </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item" href="#">Practice Management</a></li>
+                                <li><a class="dropdown-item" href="#">Continuing Education</a></li>
+                                <li><a class="dropdown-item" href="#">WEALTH MANAGEMENT</a></li>
+                                <li><a class="dropdown-item" href="#">Portfolio Construction</a></li>
+                                <li>
+                                    <li><a class="dropdown-item" href="#">Financial Professional Courses</a></li>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
 
             </div>
+        </nav>
+        <!--End Navbar Education-->
+    </div>
 
-        </div>
-    </nav>
-    <!--End Navbar Education-->
 
 
     <!--Register Modal -->
@@ -346,9 +347,11 @@
 
 
     <!--Cards-->
-    <section>
-        <div class="row justify-content-center mt-3 ms-2 me-2">
-            <div class="col-sm-3">
+    <section class="container-fluid">
+        <div class="row justify-content-center mt-3">
+
+            <!--Col 3*4-->
+            <div class="col-md-3">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Quantitative Trading Systems</h5>
@@ -359,7 +362,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3">
+
+
+            <div class="col-md-3">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Python For Algorithmic Trading</h5>
@@ -370,7 +375,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3">
+
+
+            <div class="col-md-3">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Machine Learning for Algorithmic Trading</h5>
@@ -381,7 +388,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3">
+
+
+            <div class="col-md-3">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Probability for Financial Machine Learning</h5>
@@ -400,33 +409,32 @@
 
 
     <!--introduce Web section-->
-    <section id="about" class="py-5">
-        <div class="dark-overlay">
-            <div class="row">
-                <div class="col">
-                    <div class="container" id="Welcome">
-                        <h1>PIONEER FOR THE BETTER</h1>
-                        <p>At Quant World. we never cease to develop and innovate financial technologies on top of our “Customer First” mindset. We are the driving force behind KBank’s success as well as their navigator exploring the digital world beyond
-                            Thailand. Our wide-ranging online banking services are equipped with concrete infrastructure and strong barriers capable of guarding customers’ valuable assets and data.</p>
-                        <button type="button" class="btn btn-success" id="button_introduce_Web" style="vertical-align:middle"><span>LEARN MORE</span></button>
-                    </div>
-                </div>
+    <section id="about" class="container-fluid">
+        <div class="row dark-overlay" id="Row_introduceWeb">
+            <div class="col-md-5">
+                <h1>PIONEER FOR THE BETTER</h1>
+                <p>At Quant World. we never cease to develop and innovate financial technologies on top of our “Customer First” mindset. We are the driving force behind KBank’s success as well as their navigator exploring the digital world beyond Thailand.
+                    Our wide-ranging online banking services are equipped with concrete infrastructure and strong barriers capable of guarding customers’ valuable assets and data.</p>
+                <button type="button" class="btn btn-success" id="button_introduce_Web" style="vertical-align:middle"><span>LEARN MORE</span></button>
             </div>
         </div>
+
     </section>
     <!--End introduce Web section-->
 
 
-     <!--Display API-->
-     <div class="row h-500 m-auto p-5 bg-light" id="Row_API">
+    <!--Display API-->
+    <div class="row h-500 m-auto p-5 bg-light" id="Row_API">
         <div class="col d-flex justify-content-center" id="Display_API"></div>
     </div>
 
 
     <!--Web content-->
-    <section>
+    <section class="container-fluid">
         <!--Row-->
         <div class="row" id="Row_Web_content">
+
+            <!--Col-8-->
             <div class="col-md-8" id="Market_Capitalization">
                 <h2>Market Capitalization</h2>
                 <p>Market capitalization is the total dollar market value of all of a company's outstanding shares.</p>
@@ -437,14 +445,19 @@
                 </div>
                 <button type="button" class="btn btn-outline-secondary">SIGN UP NOW!</button>
             </div>
+
+
+            <!--Col-4-->
             <div class="col-md-4" id="Web_content_ul">
-                <ul>
-                    <li><a class="nav-link" href="#">Corporate Bond</a></li>
-                    <li><a class="nav-link" href="#">Federal Deposit Insurance Corporation (FDIC)</a></li>
-                    <li><a class="nav-link" href="#">Price-to-Earnings (P/E) Ratio</a></li>
-                    <li><a class="nav-link" href="#">Bond</a></li>
-                    <li><a class="nav-link" href="#">Index</a></li>
-                    <li><a class="nav-link" href="#">Guardian IRA</a></li>
+                <ul id="ul_navlink">
+                    <div class="row" id="row_Web_content_li">
+                        <li><a class="nav-link" href="#">Corporate Bond</a></li>
+                        <li><a class="nav-link" href="#">Federal Deposit Insurance Corporation (FDIC)</a></li>
+                        <li><a class="nav-link" href="#">Price-to-Earnings (P/E) Ratio</a></li>
+                        <li><a class="nav-link" href="#">Bond</a></li>
+                        <li><a class="nav-link" href="#">Index</a></li>
+                        <li><a class="nav-link" href="#">Guardian IRA</a></li>
+                    </div>
                 </ul>
             </div>
         </div>
@@ -453,7 +466,7 @@
 
 
     <!--Teams-->
-    <section>
+    <section class="container-fluid">
         <!--Row-->
         <div class="row">
             <!--Col 1-->
@@ -487,47 +500,55 @@
 
 
     <!--Footer-->
-    <footer class="bg-dark pt-3">
-        <div class="container">
-            <!--Row 1-->
-            <div class="row text-light" id="row_footer">
-                <div class="col-4" id="logo_footer">
+    <div class="container-fluid bg-dark pt-3">
+        <!--Row 1-->
+        <div class="row text-light" id="row_footer">
+            <div class="col-md d-flex justify-content-center" id="All_Text_footer">
+                <div id="logo_footer">
                     <img src="./img/logo_footer.png">
                     <p>
                         Copyright &copy; Quantitative World Official 2022
                     </p>
                 </div>
-                <div class="col-4" id="manu_footer">
-                    <ul>
-                        <li><a class="nav-link" href="#">Home</a></li>
-                        <li><a class="nav-link" href="#">About</a></li>
-                        <li><a class="nav-link" href="#">Co-Innovation</a></li>
-                        <li><a class="nav-link" href="#">Life</a></li>
-                    </ul>
-                </div>
-                <div class="col-4" id="manu_footer">
-                    <ul>
-                        <li><a class="nav-link" href="#">Algorithmic Trading</a></li>
-                        <li><a class="nav-link" href="#">Market Analysis</a></li>
-                        <li><a class="nav-link" href="#">Machine Learning</a></li>
-                        <li><a class="nav-link" href="#">Probability</a></li>
-                    </ul>
-                </div>
+                <ul>
+                    <li><a class="nav-link" href="#">Home</a></li>
+                    <li><a class="nav-link" href="#">About</a></li>
+                    <li><a class="nav-link" href="#">Co-Innovation</a></li>
+                    <li><a class="nav-link" href="#">Life</a></li>
+                </ul>
+                <ul>
+                    <li><a class="nav-link" href="#">Algorithmic Trading</a></li>
+                    <li><a class="nav-link" href="#">Market Analysis</a></li>
+                    <li><a class="nav-link" href="#">Machine Learning</a></li>
+                    <li><a class="nav-link" href="#">Probability</a></li>
+                </ul>
             </div>
+            <!--
+            <div class="col-md-4" id="manu_footer">
+                <ul>
+                    <li><a class="nav-link" href="#">Home</a></li>
+                    <li><a class="nav-link" href="#">About</a></li>
+                    <li><a class="nav-link" href="#">Co-Innovation</a></li>
+                    <li><a class="nav-link" href="#">Life</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4" id="manu_footer">
+                <ul>
+                    <li><a class="nav-link" href="#">Algorithmic Trading</a></li>
+                    <li><a class="nav-link" href="#">Market Analysis</a></li>
+                    <li><a class="nav-link" href="#">Machine Learning</a></li>
+                    <li><a class="nav-link" href="#">Probability</a></li>
+                </ul>
+            </div>-->
         </div>
-    </footer>
+    </div>
+
 
 
 
 
     <!--JS-->
     <script src="./index.js"></script>
-
-
-
-
-
-
 
 
 

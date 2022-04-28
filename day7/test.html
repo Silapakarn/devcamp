@@ -13,10 +13,94 @@
 
     <!--Axios-->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <style>
+        [class*="col"] {
+            padding: 1rem;
+            background-color: #33b5e5;
+            color: #fff;
+            text-align: center;
+        }
+        
+        #row_navbar div {
+            border: 2px solid red;
+        }
+        
+        #Main_Content {
+            border: 2px solid red;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+        
+        #Main_Content div {
+            border: 2px solid rgb(255, 123, 0);
+        }
+        
+        #footer_Content {
+            border: 2px solid rgb(255, 123, 0);
+        }
+        
+        #footer_Content a {
+            border: 2px solid rgb(255, 0, 0);
+        }
+        
+        #footer_Content ul {
+            border: 2px solid rgb(145, 255, 0);
+            display: flex;
+            margin: auto;
+            width: 100%;
+            justify-content: center;
+        }
+    </style>
 </head>
 
 <body>
 
+
+    <div class="container-fluid" id="header">
+        <div class="row" id="row_navbar">
+            <div class="col-sm">1</div>
+            <div class="col-sm">2</div>
+            <div class="col-sm">3</div>
+        </div>
+        <div class="row" id="row_navbar">
+            <div class="col-sm">1</div>
+            <div class="col-sm">2</div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid" id="Main_Content">
+        <div class="row" id="row_Content">
+            <div class="col-md-8">Main Content</div>
+            <div class="col-md-4">Sidebar</div>
+        </div>
+    </div>
+
+
+
+    <footer class="container-fluid" id="footer">
+        <div class="row" id="row_footer">
+            <div class="col-md-4" id="footer_Content">
+                <a href="#">Kan</a>
+            </div>
+            <div class="col-md-4" id="footer_Content">
+                <ul style="list-style-type:none">
+                    <li type="button ">Coffee</li>
+                    <li type="button ">Tea</li>
+                    <li type="button ">Milk</li>
+                </ul>
+            </div>
+            <div class="col-md-4" id="footer_Content">
+                <ul style="list-style-type:none">
+                    <li type="button ">Coffee</li>
+                    <li type="button ">Tea</li>
+                    <li type="button ">Milk</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
 
 
