@@ -22,8 +22,8 @@ axios.get('./Data_API/response_API_yahoofinanc.json').then(function(response) {
 
 
     ///Setup <tag table bootstrap>
-    result += `<table class="table" id="table_API">
-    <thead><tr id="tr_API">
+    result += `<table class="col-md col-sm col-xs table" id="table_API">
+    <thead><tr>
     <th scope="col">Symbol</th>
     <th scope="col">Stock Name</th>
     <th scope="col">Market Price Open</th>

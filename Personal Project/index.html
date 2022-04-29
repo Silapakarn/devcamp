@@ -424,8 +424,10 @@
 
 
     <!--Display API-->
-    <div class="row h-500 m-auto p-5 bg-light" id="Row_API">
-        <div class="col d-flex justify-content-center" id="Display_API"></div>
+    <div class="container-fluid" id="Row_API">
+        <div class="row h-500 p-5 justify-content-center" id="Display_API">
+            <!--<div class="col-md justify-content-center" id="Display_API"></div>-->
+        </div>
     </div>
 
 
@@ -496,50 +498,38 @@
 
     </section>
     <!--End Teams-->
-
+    
 
 
     <!--Footer-->
-    <div class="container-fluid bg-dark pt-3">
-        <!--Row 1-->
+    <div class="container-fluid bg-dark pt-3 d-flex justify-content-center">
         <div class="row text-light" id="row_footer">
-            <div class="col-md d-flex justify-content-center" id="All_Text_footer">
-                <div id="logo_footer">
+            <div class="col-md-4 col-xs-4 col-xs" id="Logo_Text_footer">
                     <img src="./img/logo_footer.png">
                     <p>
                         Copyright &copy; Quantitative World Official 2022
                     </p>
+            </div>
+            <div class="col-md-8 col-xs-8 d-flex" id="nav_link">
+                <div>
+                    <ul>
+                        <li><a class="nav-link" href="#">Home</a></li>
+                        <li><a class="nav-link" href="#">About</a></li>
+                        <li><a class="nav-link" href="#">Co-Innovation</a></li>
+                        <li><a class="nav-link" href="#">Life</a></li>
+                    </ul>
                 </div>
-                <ul>
-                    <li><a class="nav-link" href="#">Home</a></li>
-                    <li><a class="nav-link" href="#">About</a></li>
-                    <li><a class="nav-link" href="#">Co-Innovation</a></li>
-                    <li><a class="nav-link" href="#">Life</a></li>
-                </ul>
-                <ul>
-                    <li><a class="nav-link" href="#">Algorithmic Trading</a></li>
-                    <li><a class="nav-link" href="#">Market Analysis</a></li>
-                    <li><a class="nav-link" href="#">Machine Learning</a></li>
-                    <li><a class="nav-link" href="#">Probability</a></li>
-                </ul>
+                <div>
+                    <ul>
+                        <li><a class="nav-link" href="#">Algorithmic Trading</a></li>
+                        <li><a class="nav-link" href="#">Market Analysis</a></li>
+                        <li><a class="nav-link" href="#">Machine Learning</a></li>
+                        <li><a class="nav-link" href="#">Probability</a></li>
+                    </ul>
+                </div>
             </div>
-            <!--
-            <div class="col-md-4" id="manu_footer">
-                <ul>
-                    <li><a class="nav-link" href="#">Home</a></li>
-                    <li><a class="nav-link" href="#">About</a></li>
-                    <li><a class="nav-link" href="#">Co-Innovation</a></li>
-                    <li><a class="nav-link" href="#">Life</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4" id="manu_footer">
-                <ul>
-                    <li><a class="nav-link" href="#">Algorithmic Trading</a></li>
-                    <li><a class="nav-link" href="#">Market Analysis</a></li>
-                    <li><a class="nav-link" href="#">Machine Learning</a></li>
-                    <li><a class="nav-link" href="#">Probability</a></li>
-                </ul>
-            </div>-->
+            
+            
         </div>
     </div>
 
@@ -549,6 +539,7 @@
 
     <!--JS-->
     <script src="./index.js"></script>
+
 
 
 
