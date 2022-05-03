@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+
+.Header{
+  border: 2px solid red;
+}
+
+
+.Content{
+  border: 2px solid rgb(200, 255, 0);
+  height: 25vw;
+  width: 100%;
+}
+
+.Content h2{
+  display: inline-block;
+  margin-top: 150px;
+}
+
+.Footers{
+  border: 2px solid rgb(32, 161, 0);
+}
+
+
+
+
+
+
