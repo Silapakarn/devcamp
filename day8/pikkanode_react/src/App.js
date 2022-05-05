@@ -1,9 +1,18 @@
 
 import './App.css';
 import Header from './Header';
-import Card from './Components/Card';
 import Footer from './Footer';
 import Content from './Components/Content';
+
+
+
+
+
+
+
+
+
+
 
 
 function App() {
