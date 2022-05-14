@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5px;
+  }
+  
+  .column {
+    flex: 25%;
+    padding: 0 2px;
+  }
+  
+  .column img {
+    margin-top: 10px;
+    vertical-align: middle;
+    width: 100%;
+    filter: grayscale(0.7) brightness(0.5);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.5s linear;
+  }
+  
+
+  @media (max-width: 700px) {
+    .column {
+      flex: 50%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .column {
+      flex: 70%;
+    }
+  }

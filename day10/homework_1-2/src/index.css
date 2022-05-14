@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/*****Content****/
+
+.Content{
+  display: flex;
+  justify-content: center;
+}
+
+/*****Form******/
+
+.site-layout-container{
+  border: 2px solid rgba(228, 228, 228, 0.925);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 1rem;
+  width: 50%;
+  
+}
+
+.input-form{
+  /*border: 2px solid rgb(255, 153, 0);*/
+  width: 100%;
+}
+
+
+
+.input-name{
+  /*border: 2px solid rgb(0, 60, 255);*/
+  display: flex;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.input-name input{
+  margin: 0 auto;
+  width: 70%;
+}
+
+.input-Age{
+  /*border: 2px solid rgb(0, 60, 255);*/
+  display: flex;
+  margin: 0 auto;
+  width: 70%;
+  padding-left: 45px;
+
+}
+
+.Radio-Group{
+  /*border: 2px solid rgb(255, 0, 106);*/
+  display: flex;
+  margin: 0 auto;
+  width: 70%;
+  padding-left: 40px;
+}
+
+
+
+.Address-Select-1 {
+  /*border: 2px solid rgb(223, 114, 64);*/
+  display: flex;
+  margin: 0 auto;
+  width: 70%;
+  padding-left: 18px;
+}
+
+.Address-Select-2 {
+  /*border: 2px solid rgb(223, 114, 64);*/
+  display: flex;
+  margin: 0 auto;
+  width: 70%;
+  padding-left: 8px;
+}
+
+
+.Add-Skill{
+  /*border: 2px solid rgb(223, 114, 64);*/
+  padding-left: 50px;
+}
+
+
+.Select-date{
+  /*border: 2px solid rgb(51, 41, 196);*/
+  margin: 0 auto;
+  width: 70%;
+  padding-left: 48px;
+}
+
+
+.Checkbox-Group{
+  /*border: 2px solid rgb(41, 147, 196);*/
+  display: flex;
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 10px;
+}
+
+.Rate{
+  display: flex;
+  margin: 0 auto;
+  width: 27%;
+  margin-top: 20px;
+  /*border: 2px solid rgb(41, 147, 196);*/
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+
+.Slider_Form{
+  /*border: 2px solid rgb(196, 41, 49);*/
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 20px;
+}
+
+.Upload-form{
+  /*border: 2px solid rgb(41, 147, 196);*/
+  display: flex;
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 20px;
+}
+
+.Mentions-form{
+  /*border: 2px solid rgb(219, 223, 32);*/
+  display: flex;
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 20px;
+}
+
+.Button-form{
+  /*border: 2px solid rgb(147, 32, 214);*/
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 20px;
+}
+
+

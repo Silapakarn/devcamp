@@ -49,6 +49,7 @@
 
             for (let i = 0; i < response.data.data.length; i++) {
                 let img = "<p><img src='" + response.data.data[i].avatar + "'></p>";
+                
                 textHtml += "<td><strong>" + response.data.data[i].first_name + "</strong><p>" + response.data.data[i].email + "</p>" + img + "</td>";
             }
             rowDisplay.innerHTML = textHtml;

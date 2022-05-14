@@ -1,0 +1,81 @@
+
+/*font-family*/
+body{
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+/*text_title_Register_Form*/
+.text_title_Register_Form{
+  font-weight: bold;
+}
+
+/*input*/
+input{
+  margin-right: 10px;
+}
+
+/*container*/
+.container{
+  box-sizing: border-box;
+  width: 40%;
+  padding-bottom: 20px;
+  margin: auto;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 20px;
+  margin: 10px 20px ;
+}
+
+/*All_button*/
+.all_button{
+  text-align: center;
+}
+
+/*hover*/
+.Register_button:hover{
+  background-color: #391572;
+  color: rgb(255, 255, 255);
+}
+.Reset_button:hover{
+  background-color: #391572;
+  color: rgb(255, 255, 255);
+}
+
+
+/*Register_button*/
+.Register_button{
+  text-align: center;
+    background-color: #5303d3;
+    color: white;
+    padding: 15px 15px;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    border-radius: 6px;
+}
+
+/*Reset_Button*/
+.Reset_button {
+  text-align: center;
+  background-color: #5303d3;
+  color: white;
+  padding: 15px 15px;
+  margin: auto;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+  border-radius: 6px;
+}
+
+/*text color to links */
+a {
+  color: dodgerblue;
+}
+
+
+
+
