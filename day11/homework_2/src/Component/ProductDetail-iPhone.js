@@ -8,10 +8,14 @@ function ProductDetail() {
     let param = useParams();
     console.log(param);
 
-    return (<>
+    return (<><div style={{margin: '1rem'}}>
+
         <h2>Product Detail</h2>
         <p>You open product {param.id}</p>
         <p>Product name is: {param.name}</p>
+
+    </div>
+        
        
     </>);
    }

@@ -13,14 +13,14 @@ import {Link} from "react-router-dom";
     { id: '06', name: 'Android' , img:'https://www.apple.com/newsroom/images/product/iphone/geo/Apple_iPhone-13-Pro_iPhone-13-Pro-Max_GEO_09142021_inline.jpg.large.jpg'}
     ]
 
-    return (<>
+    return (<div style={{margin: '1rem'}}>
     <h2>Product iPhone</h2>
     
     <ul>
     {productList.map(x => 
           <li key={x.id} style={{listStyle: 'none'}}><Link to={`${x.id}/${x.name}`}> {x.name}</Link></li>)}
     </ul>
-    </>
+    </div>
 
     );
    }

@@ -43,13 +43,19 @@ import {Link} from "react-router-dom";
       Fax_No: '+66666'},
     ]
 
-      return (<>
+      return (<><div style={{margin: '1rem'}}>
+
         <h2>Warehouse Location</h2>
         <ul>{console.log(Data_Location)}
+
           {Data_Location.map(x => 
-          <li key={x.id} style={{listStyle: 'none'}}><Link to={`${x.id}/${x.Warehouse_Name}/${x.Latitude}/${x.Longitude}/${x.Tel_No}`}> {x.Warehouse_Name}
+          <li key={x.id} style={{listStyle: 'none'}}><Link to={`${x.id}/${x.Warehouse_Name}/${x.Latitude}/${x.Longitude}/${x.Tel_No}/${x.Fax_No}`}> {x.Warehouse_Name}
+
           </Link></li>)}
-    </ul>
+          </ul>
+
+      </div>
+        
     </>
     );
   }

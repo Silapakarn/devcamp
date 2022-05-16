@@ -12,7 +12,7 @@ import ProductDetail from "./Component/ProductDetail-iPhone";
 
 function App() {
   return (
-    <div>  
+    <div style={{margin: '1rem'}}>  
       <h2>Web Shop-Stock</h2>
       <Routes>
         
@@ -22,7 +22,7 @@ function App() {
         <Route path="shopstock/:id/:name" element={<ProductDetail />} />
 
         <Route path="location" element={<WarehouseLocation />} />
-        <Route path="location/:id/:Warehouse_Name/:Latitude/:Longitude/:Tel_No" element={<WarehouseDetail />} />
+        <Route path="location/:id/:Warehouse_Name/:Latitude/:Longitude/:Tel_No/:Fax_No" element={<WarehouseDetail />} />
 
         <Route path="contact" element={<Contact />} />
         
