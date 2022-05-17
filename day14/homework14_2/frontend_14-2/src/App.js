@@ -10,7 +10,7 @@ export default function App() {
     .then(function (response) {
 
         let conten = document.getElementById('conten')
-        const aUser = response.data[0].data;
+        const aUser = response.data.data;
         console.log(aUser)
 
         let str = '';

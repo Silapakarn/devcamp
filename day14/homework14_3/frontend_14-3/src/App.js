@@ -16,7 +16,6 @@ function App() {
     //check
     try{
       //tell where it is going to post it
-
       //'await' is a lightweight, dependency-free promises library that makes both serial and parallel logic easy by thinking in terms of sets. You await() a set of things
 
       const result = await axios.post("http://localhost:4000/file", formdata)
@@ -29,7 +28,7 @@ function App() {
 }
 
   return (
-    <div>
+    <div style={{textAlign: 'center', margin: '3rem'}}>
 
       <input
       type="file"
