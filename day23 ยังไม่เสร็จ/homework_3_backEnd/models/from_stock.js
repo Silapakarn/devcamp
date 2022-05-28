@@ -15,7 +15,7 @@ router.get('/stock/', async (req, res, next) => {
     });
     
     const id = req.params.id
-    const rows = await connection.query(`SELECT * from stock_hw` );
+    const rows = await connection.query(`SELECT * from stock_hw`);
     res.json(rows[0])
 });
   

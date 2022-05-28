@@ -1,6 +1,6 @@
 CREATE TABLE order_item (
     id int auto_increment,
-amount int not null,
+	amount int not null,
     discount int not null,
 	PRIMARY KEY (id)
 );
@@ -9,8 +9,7 @@ CREATE TABLE Orders (
 	id int auto_increment,
     date_order varchar(60) not null,
     contain int not null,
-    PRIMARY KEY (id),
-    FOREIGN KEY (contain) REFERENCES order_item (amount)
+    PRIMARY KEY (id)
 );
 
 CREATE TABLE employee (
@@ -19,8 +18,7 @@ CREATE TABLE employee (
 	address varchar(60) not null,
     salary int not null,
     sold int not null,
-    PRIMARY KEY (id),
-    FOREIGN KEY (sold) REFERENCES Orders (id)
+    PRIMARY KEY (id)
 );
 
 CREATE TABLE product (
@@ -30,8 +28,7 @@ CREATE TABLE product (
     price int not null,
     quantity int not null,
     refer int not null,
-    PRIMARY KEY (id),
-    FOREIGN KEY (refer) REFERENCES order_item (id)
+    PRIMARY KEY (id)
 );
 
 CREATE TABLE customer (
@@ -39,8 +36,7 @@ CREATE TABLE customer (
     name varchar(60) not null,
     address varchar(60) not null,
     place varchar(60) not null,
-    PRIMARY KEY (id),
-    FOREIGN KEY (place) REFERENCES Orders (id)
+    PRIMARY KEY (id)
 );
 
 create table department (
@@ -48,8 +44,7 @@ create table department (
   name varchar(60) not null,
   budget varchar(60) not null,
   emp_dept int not null,
-  primary key (name),
-  FOREIGN KEY (emp_dept) REFERENCES employee (id)
+  primary key (id)
 );
 
 CREATE TABLE supplier (
@@ -57,7 +52,6 @@ CREATE TABLE supplier (
     address varchar(60) not null,
     phone_number int not null,
     prod_sup varchar(60) not null,
-    PRIMARY KEY (name),
-    FOREIGN KEY (prod_sup) REFERENCES product (id)
+    PRIMARY KEY (name)
 );
 

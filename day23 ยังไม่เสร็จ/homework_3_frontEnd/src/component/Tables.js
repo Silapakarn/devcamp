@@ -6,20 +6,25 @@ import axios from 'axios';
 
 const columns = [
   {
-    title: 'Name',
-    dataIndex: 'name',
-    key: 'name',
+    title: 'id',
+    dataIndex: 'id',
+    key: 'id',
+  },
+  {
+    title: 'product_name',
+    dataIndex: 'product_name',
+    key: 'product_name',
     render: (text) => <a>{text}</a>,
   },
   {
-    title: 'Age',
-    dataIndex: 'age',
-    key: 'age',
+    title: 'stock_left',
+    dataIndex: 'stock_left',
+    key: 'stock_left',
   },
   {
-    title: 'Address',
-    dataIndex: 'address',
-    key: 'address',
+    title: 'category',
+    dataIndex: 'category',
+    key: 'category',
   },
   {
     title: 'Tags',
@@ -65,24 +70,31 @@ const data_2 = async () => {
 
 const data = [
   {
-    key: '1',
-    name: 'John Brown',
-    age: 32,
-    address: 'New York No. 1 Lake Park',
+    id: '1',
+    product_name: 'Silapakan',
+    stock_left: 32,
+    category: 'Box',
     tags: ['nice', 'developer'],
   },
   {
-    key: '2',
-    name: 'Jim Green',
-    age: 42,
-    address: 'London No. 1 Lake Park',
+    id: '2',
+    product_name: 'Jim Green',
+    stock_left: 42,
+    category: 'Box',
     tags: ['loser'],
   },
   {
-    key: '3',
-    name: 'Joe Black',
-    age: 32,
-    address: 'Sidney No. 1 Lake Park',
+    id: '3',
+    product_name: 'Joe Black',
+    stock_left: 18,
+    category: 'Box',
+    tags: ['cool', 'teacher'],
+  },
+  {
+    id: '4',
+    product_name: 'Joe Black',
+    stock_left: 19,
+    category: 'Box',
     tags: ['cool', 'teacher'],
   },
 ];
