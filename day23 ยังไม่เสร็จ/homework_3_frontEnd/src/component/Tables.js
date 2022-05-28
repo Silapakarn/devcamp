@@ -3,6 +3,38 @@ import 'antd/dist/antd.css';
 import '../index.css';
 import { Space, Table, Tag } from 'antd';
 import axios from 'axios';
+import { Button, Modal } from 'antd';
+import { useState } from 'react';
+
+const Edit = () => {
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
+  const showModal = () => {
+    setIsModalVisible(true);
+  };
+
+  const handleOk = () => {
+    setIsModalVisible(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalVisible(false);
+  };
+
+  return (
+    <>
+      <Button type="primary" onClick={showModal}>
+        Edit
+      </Button>
+      <Modal title="Basic Modal" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+      </Modal>
+    </>
+  );
+};
+
 
 const columns = [
   {
@@ -25,6 +57,11 @@ const columns = [
     title: 'category',
     dataIndex: 'category',
     key: 'category',
+  },
+  {
+    title: 'Edit',
+    dataIndex: 'Edit',
+    key: 'Edit',
   },
   {
     title: 'Tags',
@@ -75,6 +112,7 @@ const data = [
     stock_left: 32,
     category: 'Box',
     tags: ['nice', 'developer'],
+    Edit : <Edit />
   },
   {
     id: '2',
@@ -82,6 +120,7 @@ const data = [
     stock_left: 42,
     category: 'Box',
     tags: ['loser'],
+    Edit : <Edit />
   },
   {
     id: '3',
@@ -89,6 +128,7 @@ const data = [
     stock_left: 18,
     category: 'Box',
     tags: ['cool', 'teacher'],
+    Edit : <Edit />
   },
   {
     id: '4',
@@ -96,6 +136,7 @@ const data = [
     stock_left: 19,
     category: 'Box',
     tags: ['cool', 'teacher'],
+    Edit : <Edit />
   },
 ];
 

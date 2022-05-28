@@ -6,10 +6,6 @@ import Employee_List from './Component/Employee_List';
 import Department_List from './Component/Department_List';
 
 
-
-
-
-
 function App() {
   return <Routing />;
 }
