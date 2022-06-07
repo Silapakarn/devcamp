@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+
+  <body>
+
+    <div>
+      <button id="btn">Click ! Show console.log</button>
+    </div>
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+
+    <script>
+
+       
+        //ShowData
+        const ShowData = async () => {
+
+          //await____1 
+          const user = await axios.get(
+            "https://5b8000bc0516b10014d44a51.mockapi.io/employees"
+          );
+
+          //await____2
+          const usd  =  await axios.get("https://5b8000bc0516b10014d44a51.mockapi.io/exchange-rate")
+          
+          //Loop
+          for (let i = 0; i < user.data.length; i++) {
+            //calculate salary
+            user.data[i].salary = (user.data[i].salary / usd.data.USD).toFixed(2);
+          }
+          
+          // console.log salary
+          console.log(user.data);
+        };
+
+
+        const Display = document.getElementById("btn");
+
+        Display.addEventListener("click", ShowData);
+
+    </script>
+
+
+  </body>
+</html>

@@ -13,10 +13,7 @@ export default function Register_Form() {
         // call backend here
 
         console.log(values.username);
-        console.log(values.password);
-        console.log(values.first_name);
-        console.log(values.last_name);
-        console.log(values.email);
+       
 
         const Sent_data = async () => { 
                 await axios.post("http://localhost:3000/api/users", {

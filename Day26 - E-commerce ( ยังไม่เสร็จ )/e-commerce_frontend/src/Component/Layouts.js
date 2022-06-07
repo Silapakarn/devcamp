@@ -14,9 +14,6 @@ const { Header, Sider, Content } = Layout;
 
 
 
-
-
-
 const Layouts = () => {
   const [collapsed, setCollapsed] = useState(false);
   return (

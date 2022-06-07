@@ -1,17 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import 'antd/dist/antd.css';
-import { Table, Modal, Avatar } from 'antd';
-import { AntDesignOutlined } from '@ant-design/icons';
-import Create_Product from '../Component/Create_Product'
-import Edit_Button from '../Component/Edit_Button'
 import '../index.css'
 import axios from 'axios';
-import MyUpload from '../Upload/MyUpload'
-import Test_Upload from '../Component/Test_Upload'
-
+import { Table, Modal, Avatar } from 'antd';
+import { AntDesignOutlined } from '@ant-design/icons';
 import { useSelector, useDispatch } from 'react-redux'
-import { initData  } from '../Reducer/productReducer'
 import { useNavigate } from 'react-router-dom';
+
+
+
+import Create_Product from '../Component/Create_Product'
+import Edit_Button from '../Component/Edit_Button'
+import MyUpload from '../Upload/MyUpload'
+import { initData  } from '../Reducer/productReducer'
+
 
 
 //Create_Button

@@ -3,6 +3,7 @@ import React , {useState} from 'react';
 
 
 function App() {
+
   let i = 0;
   let [toDoList, setToDoList] = useState([{ date: Date(), msg: "hello" }]);
   
@@ -23,8 +24,6 @@ function App() {
       alert("NO ToDoList");
     }
   }
-
-
 
   function deleteList(x) {
     let ans = toDoList.filter((y) => y.msg !== x.msg);
@@ -47,8 +46,5 @@ function App() {
     </div>
   );
 }
-
-
-
 
 export default App;
