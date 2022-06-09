@@ -8,10 +8,8 @@ import { useSelector, useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom';
 
 
-
 import Create_Product from '../Component/Create_Product'
 import Edit_Button from '../Component/Edit_Button'
-import MyUpload from '../Upload/MyUpload'
 import { initData  } from '../Reducer/productReducer'
 
 
@@ -61,7 +59,7 @@ const Product = () => {
 
     //Get Data from database to display
     useEffect(() => {
-        axios.get('http://localhost:3000/users/api/product/')
+        axios.get('http://localhost:3000/api/product/')
             .then(result => dispatch(initData(result.data)))
             .catch(e => console.log(e))
     }, []);
@@ -129,7 +127,7 @@ const Product = () => {
               <div style={{display: 'flex'}}>
                 <Edit_Button/>
                 <button class='button-38'onClick={() => onDelete(record.id)}>Delete</button>
-                <MyUpload />
+              
               </div>
         </>  
         )

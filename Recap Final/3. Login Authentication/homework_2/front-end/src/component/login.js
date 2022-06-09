@@ -14,6 +14,7 @@ export default function Login() {
                        password: values.password ,
                    });
                        localStorage .setItem('token', result.data.token);
+                       
                        window.location.href='/profile'
 
                    } catch (e) {

@@ -1,6 +1,7 @@
 import { Button, Form, Input, Space, InputNumber } from 'antd';
 import React from "react";
 import axios from 'axios';
+import MyUpload from '../Upload/MyUpload'
 
 export default function Create_Product() {
         
@@ -74,6 +75,8 @@ export default function Create_Product() {
                                     >
                                 <Input />
                         </Form.Item >
+
+                        <MyUpload />
                            
                             <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
                                     <Button type="primary" htmlType="submit">

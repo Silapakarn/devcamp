@@ -74,6 +74,14 @@ code {
   box-shadow: none;
 }
 
+.ButtonLogout{
+  /* border: 3px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* margin-right: 12px; */
+}
+
 
 
 

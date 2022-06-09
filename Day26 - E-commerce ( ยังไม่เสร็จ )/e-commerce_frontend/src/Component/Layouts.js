@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import 'antd/dist/antd.css';
 import '../index.css';
-import { Layout, Menu, Button } from 'antd';
+import { Layout, Menu, Button, Modal } from 'antd';
 import {
   MenuUnfoldOutlined,
   MenuFoldOutlined,
@@ -9,13 +9,68 @@ import {
   VideoCameraOutlined,
   UploadOutlined,
 } from '@ant-design/icons';
+
 import Product from './Product'
+import Logout from '../Login/Logout'
+
 const { Header, Sider, Content } = Layout;
 
 
 
+function ButtonLogout() {
+ 
+  //Modal
+  const [loading, setLoading] = useState(false);
+  const [visible, setVisible] = useState(false);
+
+  const showModal = () => {
+    setVisible(true);
+  };
+
+  const handleOk = () => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+      setVisible(false);
+    }, 3000);
+  };
+
+  const handleCancel = () => {
+    setVisible(false);
+  };
+
+  return(<>
+            <div className="ButtonLogout">
+                    <Button type="primary" onClick={showModal}>
+                      Logout
+                    </Button>
+
+                    <Modal 
+                      visible={visible}
+                      onOk={handleOk}
+                      onCancel={handleCancel}
+                      footer={[]}
+                      >
+                        
+                        <Logout />
+                      
+                    </Modal>
+          </div>
+    </>
+  )}
+
+
+
+
+
+
+
+
+
 const Layouts = () => {
+
   const [collapsed, setCollapsed] = useState(false);
+
   return (
     <Layout>
       <Sider trigger={null} collapsible collapsed={collapsed}>
@@ -42,8 +97,10 @@ const Layouts = () => {
             },
           ]}
         />
+        <ButtonLogout />
       </Sider>
       <Layout className="site-layout">
+      
         <Header
           className="site-layout-background"
           style={{
@@ -54,7 +111,14 @@ const Layouts = () => {
             className: 'trigger',
             onClick: () => setCollapsed(!collapsed),
           })}
+
+            
+
+            
         </Header>
+
+        
+
         <Content
           className="site-layout-background"
           style={{

@@ -30,7 +30,7 @@ app.use(cors())
 
 app.use('/', indexRouter);
 app.use('/api/users', usersRouter);
-app.use('/api/auth', usersAuthentication);
+app.use('/api/Authentication', usersAuthentication);
 app.use('/api/profile', profileRouter)
 
 

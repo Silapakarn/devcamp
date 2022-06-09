@@ -3,9 +3,12 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-// const cors = require("cors");
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var usersAuthentication = require('./routes/Authentication');
+var product = require('./routes/product');
+
 const cors = require("cors");
 
 var app = express();
@@ -32,7 +35,6 @@ app.post("/upload", (req, res) => {
 });
 
 
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -45,6 +47,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/api/Authentication', usersAuthentication);
+app.use('/', product)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
