@@ -4,9 +4,9 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { Nav, Navbar, Container, Row, Col } from 'react-bootstrap'
 import { Router, Route, Link } from 'react-router-dom';
 
-import Create_Student from './components/create-student'
-import Edit_Student from './components/edit-student'
-import Student_List from './components/student-list'
+import CreateStudent from './components/create-student'
+import EditStudent from './components/edit-student'
+import StudentList from './components/student-list'
 
 function App() {
   return (
@@ -40,10 +40,10 @@ function App() {
               <Row>
                   <Col md='12'>
                     <div className="wrapper">
-                        <Route exact path='/' components={<Create_Student/>} />
-                        <Route path='/create-student' components={<Create_Student/>} />
-                        <Route path='/edit-student/:id' components={<Edit_Student/>} />
-                        <Route path='/student-list' components={<Student_List/>} />
+                        <Route exact path='/' components={<CreateStudent/>} />
+                        <Route path='/create-student' components={<CreateStudent/>} />
+                        <Route path='/edit-student/:id' components={<EditStudent/>} />
+                        <Route path='/student-list' components={<StudentList/>} />
                     </div>
                   </Col>
               </Row>
